@@ -1,0 +1,18 @@
+.info-block-img-deco {
+  @include media-breakpoint-down(sm) {
+    background: url("../img/bg-subtract-left.svg") no-repeat left / contain;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    picture {
+      display: flex;
+      justify-content: center;
+      margin: 0 auto;
+    }
+    img {
+      border-radius: 0 65px 0 0;
+    }
+  }
+}

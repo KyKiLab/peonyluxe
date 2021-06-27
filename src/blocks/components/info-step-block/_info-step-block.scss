@@ -1,0 +1,49 @@
+.info-step {
+  &-item {
+    &:not(:last-child) {
+      margin-bottom: 200px;
+      @include media-breakpoint-down(lg) {
+        margin-bottom: 100px;
+      }
+      @include media-breakpoint-down(sm) {
+        margin-bottom: 50px;
+      }
+    }
+
+    p {
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    &__picture {
+      img {
+        width: 400px;
+        height: 600px;
+        object-fit: cover;
+
+        @include media-breakpoint-down(md) {
+          width: 100%;
+          height: auto;
+          max-height: 360px;
+        }
+      }
+    }
+
+    &__ring {
+      @include media-breakpoint-up(md) {
+        background: url("../img/bg-subtract-right.svg") no-repeat center /
+          contain;
+      }
+    } //. info-step-item__ring
+
+    &--reverse {
+      .info-step-item__ring {
+        @include media-breakpoint-up(md) {
+          background: url("../img/bg-subtract-left.svg") no-repeat left /
+            contain;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+.banner {
+  padding: 86px 0;
+  &-pink-bg {
+    background-color: $pink;
+  }
+
+  @include media-breakpoint-down(sm) {
+    padding: 42px 20px;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+  }
+}

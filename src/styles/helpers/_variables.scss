@@ -1,0 +1,26 @@
+$root-font-size: 16px;
+
+$shadow-primary: 0px 15px 20px rgba(221, 162, 136, 0.71);
+$shadow-secondary: 0px 5px 15px rgba(135, 134, 133, 0.24);
+$border-radius: 10px;
+
+$transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+$enable-negative-margins: true;
+
+$grid-gutter-width: 30px;
+$grid-breakpoints: (
+  xs: 0,
+  sm: 600px,
+  md: 800px,
+  lg: 1024.99px,
+  xl: 1300px,
+  xxl: 1440px,
+);
+
+$container-max-widths: (
+  md: 980px,
+  lg: 1180px,
+  xl: 1260px,
+  xxl: 1330px,
+);

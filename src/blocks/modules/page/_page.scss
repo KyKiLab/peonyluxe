@@ -1,0 +1,9 @@
+.page {
+  &__item-gap {
+    margin-bottom: 128px;
+
+    @include media-breakpoint-down(md) {
+      margin-bottom: 66px;
+    }
+  }
+}

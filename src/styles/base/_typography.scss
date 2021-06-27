@@ -1,0 +1,76 @@
+.main-title {
+  font-family: "Nanum", serif;
+  font-size: rem(72);
+  line-height: 1.3;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: $grey-text;
+
+  @include media-breakpoint-down(sm) {
+    font-size: rem(32);
+    text-transform: none;
+  }
+}
+
+.section-title {
+  font-family: "Nanum", serif;
+  font-size: rem(35);
+  line-height: 1.3;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: $grey-text;
+
+  @include media-breakpoint-down(sm) {
+    font-size: rem(22);
+    text-transform: none;
+  }
+}
+
+.banner-title {
+  font-family: "Nanum", serif;
+  font-size: rem(35);
+  line-height: 1.3;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: $grey-text;
+
+  @include media-breakpoint-down(sm) {
+    font-size: rem(16);
+    text-align: center;
+  }
+}
+
+.subtitle-decor {
+  display: inline-block;
+  font-family: "Haigrast", serif;
+  font-size: rem(72);
+  line-height: 1.3;
+  font-weight: 400;
+  color: $gold;
+
+  @include media-breakpoint-down(sm) {
+    font-size: rem(36);
+  }
+}
+
+.tt-none {
+  text-transform: none;
+}
+
+.txt-center {
+  text-align: center;
+  @include media-breakpoint-down(sm) {
+    text-align: left;
+  }
+}
+
+.txt-right {
+  text-align: right;
+}
+
+.txt-left {
+  text-align: left;
+}

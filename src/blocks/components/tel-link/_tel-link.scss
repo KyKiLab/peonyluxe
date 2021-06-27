@@ -1,0 +1,42 @@
+.tel-link {
+  font-size: 20px;
+  color: $gold;
+  display: flex;
+  align-items: center;
+
+  &:before {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin-right: 16px;
+    background: url("../img/ic-tel.svg") no-repeat center / contain;
+  }
+
+  &:hover {
+    color: $gold;
+  }
+
+  &-sm {
+    font-size: 14px;
+
+    &:before {
+      width: 14px;
+      height: 14px;
+      margin-right: 10px;
+      background: url("../img/ic-tel.svg") no-repeat center / contain;
+    }
+  }
+
+  &-header {
+    @media screen and (max-width: 950px) {
+      font-size: 0;
+
+      &:before {
+        width: 24px;
+        height: 24px;
+        margin-right: 0;
+      }
+    }
+  }
+}

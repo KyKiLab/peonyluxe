@@ -1,0 +1,58 @@
+.decor-slogan {
+  circle {
+    opacity: 0.4;
+  }
+  &--lg {
+    width: 120px;
+    height: 120px;
+
+    @include media-breakpoint-down(sm) {
+      width: 78px;
+      height: 78px;
+    }
+  }
+
+  &-xl-hide {
+    .decor-slogan {
+      @include media-breakpoint-down(xl) {
+        display: none;
+      }
+    }
+  }
+
+  &-mob-show {
+    .decor-slogan {
+      @include media-breakpoint-up(sm) {
+        display: none;
+      }
+    }
+  }
+}
+
+.with-decor-slogan {
+  position: relative;
+
+  .decor-slogan {
+    position: absolute;
+  }
+}
+
+.decor-slogan-right-bottom-corner {
+  .decor-slogan {
+    right: 0;
+    bottom: 0;
+    transform: translate(50%, 50%);
+
+    @media screen and (max-width: 1350px) {
+      transform: translate(20%, 50%);
+    }
+  }
+}
+
+.decor-slogan-right-top-corner {
+  .decor-slogan {
+    right: 0;
+    top: 0;
+    transform: translate(50%, 0%);
+  }
+}

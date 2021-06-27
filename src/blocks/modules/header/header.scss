@@ -1,0 +1,39 @@
+.header {
+  padding: rem(20) 0;
+  background: $primary-bg-color;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 99;
+
+  @include media-breakpoint-down(sm) {
+    padding: rem(10) 0;
+  }
+
+  &__container {
+    @include media-breakpoint-up(lg) {
+      min-height: 90px;
+    }
+  }
+
+  &__burger {
+    @media screen and (min-width: 950.99px) {
+      display: none !important;
+    }
+  }
+
+  &__menu {
+    @media screen and (max-width: 950.99px) {
+      display: none !important;
+    }
+  }
+}
+
+.header-logo {
+  max-width: 134px;
+
+  @include media-breakpoint-down(md) {
+    max-width: 90px;
+  }
+}

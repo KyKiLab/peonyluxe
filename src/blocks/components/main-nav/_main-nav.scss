@@ -1,0 +1,39 @@
+.main-nav {
+  @media screen and (max-width: 950px) {
+    position: fixed;
+    display: none;
+  }
+
+  ul {
+    display: flex;
+    li {
+      &:not(:last-child) {
+        margin-right: rem(26);
+      }
+
+      a {
+        color: $grey-text;
+        text-transform: uppercase;
+        font-size: rem(14);
+        @include transition-colors();
+        padding-top: 4px;
+        border-top: 1px solid $transparent;
+        &:hover {
+          text-decoration: none;
+          color: $gold;
+        }
+      }
+
+      &.current-menu-item {
+        a {
+          color: $gold;
+          border-color: $gold;
+          &:hover {
+            text-decoration: none;
+            color: $gold;
+          }
+        }
+      }
+    }
+  }
+}

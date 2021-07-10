@@ -7,6 +7,7 @@
   border-radius: rem(10);
   text-transform: uppercase;
   font-size: rem(14);
+  line-height: 1.5;
   min-width: rem(220);
   border: 1px solid $transparent;
   padding: rem(21);
@@ -14,6 +15,11 @@
 
   &:focus {
     outline: $peach;
+  }
+
+  &:hover {
+    color: $accent;
+    text-decoration: none;
   }
 
   @include sm-block {
@@ -41,6 +47,21 @@
 }
 
 .btn-outline {
+  border-color: $accent;
+  color: $accent;
+
+  &:hover {
+    text-decoration: none;
+    color: $light-text-color;
+    background-color: $accent;
+  }
+
+  &-xs {
+    padding: 6px 30px;
+    min-width: auto;
+    border-radius: 4px;
+  }
+
   &-mob {
     @include media-breakpoint-down(sm) {
       background-color: $transparent;

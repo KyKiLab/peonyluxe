@@ -148,7 +148,8 @@ body {
       box-shadow: none;
     }
 
-    &.slick-disabled {
+    &.slick-disabled,
+    &--disabled {
       opacity: 0.4;
       cursor: not-allowed;
     }
@@ -224,5 +225,15 @@ body {
     &--total {
       padding: 0 15px 0 10px;
     }
+  }
+}
+
+.post-nav {
+  &-item {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 10px;
   }
 }

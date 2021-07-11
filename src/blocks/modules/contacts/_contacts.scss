@@ -1,0 +1,209 @@
+.contacts {
+  &-banner {
+    padding-bottom: 43.5%;
+
+    @include media-breakpoint-down(sm) {
+      padding-bottom: 0;
+      height: 291px;
+      width: 100vw;
+      margin-left: calc(-50vw + 50%);
+    }
+  }
+}
+
+.cf {
+  padding: 36px 80px 44px;
+  background-color: $pink;
+
+  @include media-breakpoint-down(sm) {
+    padding: 30px 15px;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+  }
+  form {
+    width: 100%;
+    line-height: 1.5;
+    // color: $main-text-color;
+    @include sm(font-size, 10px);
+
+    label {
+      display: block;
+      margin-bottom: rem(8);
+    }
+
+    input:-webkit-autofill {
+      box-shadow: inset 0 0 0 50px #fff !important;
+      /* Цвет фона автозаполнение для хрома и файрфокс*/
+    }
+    input:invalid {
+      box-shadow: none; /* стандартная валидация файрфокс*/
+    }
+
+    input,
+    textarea {
+      &::placeholder {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        color: #a5b7c0;
+        text-overflow: ellipsis;
+        opacity: 1;
+        // line-height: 30px;
+        transition: all 0.3s ease;
+      }
+
+      &:focus {
+        &::placeholder {
+          opacity: 0;
+        }
+      }
+    }
+
+    textarea {
+      resize: none;
+      border: none;
+      background-color: transparent;
+      outline: #fff;
+      width: 100%;
+    }
+  }
+
+  &-input {
+    background-color: #fff;
+    border: 1px solid #a5b7c0;
+    outline: #fff;
+    padding: rem(9) rem(16);
+    box-sizing: border-box;
+    margin: 0;
+    width: 100%;
+    // line-height: 30px;
+
+    @include sm-block {
+      padding: rem(10);
+    }
+  } //.cf-input
+
+  &-checkbox {
+    display: flex;
+    flex-wrap: wrap;
+    @include sm-block {
+      justify-content: space-between;
+    }
+
+    &__label {
+      margin: 0 rem(60) 0 0;
+      @include xxl-block {
+        margin: 0 rem(40) 0 0;
+      }
+      @include sm-block {
+        margin: 0;
+      }
+    }
+    span.wpcf7-form-control.wpcf7-checkbox.wpcf7-exclusive-checkbox {
+      display: flex;
+      flex-wrap: wrap;
+      @include sm-block {
+        width: 100%;
+        justify-content: space-between;
+      }
+    }
+
+    .wpcf7-list-item {
+      &:not(:last-child) {
+        margin: 0 rem(60) 0 0;
+        @include xxl-block {
+          margin: 0 rem(40) 0 0;
+        }
+        @include sm-block {
+          margin: 0;
+        }
+      }
+    }
+
+    p.cf-checkbox__label {
+      @include sm-block {
+        width: 100%;
+        margin: 0 0 20px;
+        text-align: center;
+      }
+    }
+
+    label {
+      position: relative;
+      cursor: pointer;
+      padding-left: 30px;
+      margin-bottom: 0;
+      input[type="checkbox"] {
+        position: absolute;
+        visibility: hidden;
+        opacity: 0;
+        left: -9999px;
+        width: 0;
+
+        & + span {
+          &:before {
+            content: "";
+            position: absolute;
+            display: block;
+            left: 0;
+            top: 50%;
+            width: 20px;
+            height: 20px;
+            border: 1px solid #a5b7c0;
+            border-radius: 0;
+            background-color: #fff;
+            transform: translateY(-50%);
+          }
+        }
+
+        & + span {
+          &:after {
+            content: "";
+            position: absolute;
+            display: block;
+            left: 5px;
+            top: 50%;
+            width: 10px;
+            height: 10px;
+            background: #a5b7c0;
+            border-radius: 0;
+            transform: translate(0%, -50%);
+            opacity: 0;
+            transition: opacity 0.2s ease;
+          }
+        }
+
+        &:checked {
+          & + span {
+            &:after {
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &__confirm {
+    text-align: center;
+  }
+}
+
+.memories-images {
+  &__title {
+    margin-bottom: -200px;
+
+    @include media-breakpoint-down(lg) {
+      margin-bottom: -150px;
+    }
+    @include media-breakpoint-down(sm) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__img {
+    img {
+      width: 100%;
+    }
+  }
+}

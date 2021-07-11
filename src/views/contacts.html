@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include("../blocks/modules/head/head.html")
+  <body>
+    @@include("../blocks/modules/header/header.html")
+
+    <main class="page contacts">
+      <div class="container">
+        <div
+          class="contacts-banner inline-bg"
+          style="background-image: url(./img/bg-contacts.jpg)"
+        ></div>
+
+        <div id="goto-cf" class="cf page__item-gap">
+          <div class="row justify-content-center">
+            <div class="col-12 col-lg-8 mb-3">
+              <div class="txt-center">
+                <h1 class="section-title mb-3">Get in touch</h1>
+                <p>
+                  We’re less about frills, perfection, or about the way two
+                  people in love should look or act. We’re about how that love
+                  actually feels. The real stuff, the in-betweens. Whatever it
+                  is that makes you two, you.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <form action="/">
+            <div class="row">
+              <div class="col-12 col-md-6 mb-3">
+                <label>Name</label>
+                <input class="cf-input" type="text" />
+              </div>
+              <div class="col-12 col-md-6 mb-3">
+                <label>Email</label>
+                <input class="cf-input" type="email" />
+              </div>
+              <div class="col-12 col-md-6 mb-3">
+                <label>Phone</label>
+                <input class="cf-input" type="tel" />
+              </div>
+              <div class="col-12 col-md-6 mb-3">
+                <label>@instagram</label>
+                <input class="cf-input" type="text" />
+              </div>
+              <div class="col-12 mb-3">
+                <label>Coverage</label>
+                <select class="cf-input cf-select" name="" id="">
+                  <option value="1" selected>wedding day</option>
+                  <option value="2">intimate wedding (up to 25 guests)</option>
+                  <option value="3">elopement (just us)</option>
+                  <option value="4">sesssion</option>
+                  <option value="5">other</option>
+                </select>
+              </div>
+              <div class="col-12 mb-3">
+                <label>Date</label>
+                <input class="cf-input" type="text" />
+              </div>
+              <div class="col-12 mb-3">
+                <label>Location</label>
+                <input class="cf-input" type="text" />
+              </div>
+              <div class="col-12 mb-4 mb-md-5">
+                <label>Photography price range-ish</label>
+                <input class="cf-input" type="text" />
+              </div>
+
+              <div
+                class="
+                  col-12
+                  flex-column
+                  align-items-center
+                  justify-content-center
+                "
+              >
+                <input class="btn btn-outline" type="submit" value="submit" />
+                <p class="cf__confirm mt-3">
+                  By clicking on the “Submit” button you confirm your consent to
+                  the processing of personal data.
+                </p>
+              </div>
+            </div>
+            <!-- /.row -->
+          </form>
+        </div>
+        <!-- /.contact form -->
+
+        <div class="memories-images">
+          <div class="row">
+            <div class="col-sm-6 memories-images__title">
+              <div class="flex-column">
+                <span class="subtitle-decor ms-auto">memories</span>
+                <h2 class="section-title mb-3">Happiness in every frame</h2>
+                <p>
+                  Can we be best friends already? Let’s start planning your best
+                  day! Fill out the form above and we will contact you.
+                </p>
+              </div>
+            </div>
+            <div class="col-12">
+              <picture class="memories-images__img">
+                <source
+                  media="(max-width: 699px)"
+                  srcset="./img/memories-mob.png"
+                />
+                <source
+                  media="(min-width: 700px)"
+                  srcset="./img/memories-desctop.png"
+                />
+                <img
+                  src="./img/memories-desctop.png"
+                  alt="happiness in every frame"
+                />
+              </picture>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    @@include("../blocks/modules/footer/footer.html")
+
+    <script src="js/main.js"></script>
+    <script src="js/vendor.js"></script>
+  </body>
+</html>

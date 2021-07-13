@@ -121,6 +121,23 @@
   }
 }
 
+.video-slider-card {
+  position: relative;
+
+  &:before {
+    content: "";
+    position: relative;
+    z-index: 1;
+    display: block;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    padding-bottom: 62.5%;
+    overflow: hidden;
+  }
+}
+
 .tabs-nav {
   &-blog {
     .tabs-nav-btn {

@@ -40,14 +40,21 @@
 }
 
 .footer-nav {
-  display: flex;
-  justify-content: space-between;
   color: $grey-text;
   font-size: 14px;
   text-transform: uppercase;
 
   ul {
+    @include row-flex();
+    justify-content: space-between;
+
+    @include md-block {
+      justify-content: center;
+    }
     li {
+      @include col();
+      @include size(5);
+      @include size-sm(6);
       &:not(:last-child) {
         margin-bottom: 20px;
       }

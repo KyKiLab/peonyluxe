@@ -40,6 +40,10 @@
     overflow: hidden;
     mix-blend-mode: hue;
   }
+}
+
+.video {
+  position: relative;
 
   &__btn {
     position: absolute;

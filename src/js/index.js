@@ -5,6 +5,7 @@ import { Collapse } from "bootstrap";
 import "./adaptiveMoveBlock";
 import "./import/modules";
 import "../blocks/components/main-slider/main-slider-tabs";
+import "../blocks/components/insta-block/slider";
 import "../blocks/components/testimonials/slider";
 
 var collapseElementList = [].slice.call(document.querySelectorAll(".collapse"));

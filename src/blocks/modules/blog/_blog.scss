@@ -1,90 +1,270 @@
-.album-card {
-  background: #ffffff;
-  box-shadow: 0px 7px 15px rgba(235, 207, 200, 0.25);
-  // .album-card__image
-
-  &__image {
-    max-width: 420px;
-    height: 353px;
-
-    @include media-breakpoint-down(md) {
-      max-width: 100%;
-      height: 315px;
-    }
-
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
+.breadcrumb {
+  &-item {
+    font-family: "Poppins", serif;
+    font-size: rem(14);
+    line-height: 21px;
+    text-decoration-line: underline;
+    color: #A5A5A5;
+  }
+  .slash {
+    color: #E0E0E0;
+  }
+}
+.blog {
+  &__date {
+    font-family: "Poppins", serif;
+    font-weight: 300;
+    font-size: rem(18);
+    line-height: 130%;    
+    letter-spacing: 0.04em;
+    opacity: 0.5;
+    flex-basis: 25%;
+    @include media-breakpoint-down(sm) {
+      font-size: rem(14);
     }
   }
-
-  // .album-card__body
-
-  &__body {
-    padding: 35px 27px 50px;
-    text-align: center;
-    @include media-breakpoint-down(md) {
-      padding: 28px 18px;
+  &__title {
+    font-family: "Nanum", serif;
+    font-size: rem(24);
+    line-height: 1.25;
+    font-weight: 400;
+    opacity: 0.5;
+    flex-grow: 1;
+    @include media-breakpoint-down(sm) {
+      font-size: rem(16);
     }
-
-    p {
-      font-size: 14px;
-
-      @include media-breakpoint-down(sm) {
-        font-size: 12px;
+    @media screen and (max-width: 450px) {
+      margin-top: 10px;
+    }
+    span {
+      display: inline-block;
+      width: 35%;
+      @include media-breakpoint-down(lg) {
+        width: 100%;
       }
     }
   }
-
-  // .album-card__title
-
-  &__title {
-    text-transform: lowercase;
-    font: 25px/1.1 "Naum";
-    color: $accent;
-    max-width: 250px;
-    margin: 0 auto 10px;
-    &:first-letter {
+  &-hover {
+    display: flex;
+    position: absolute;
+    opacity: 0;
+    right: -110px;
+    z-index: 2;
+    top: 50%;
+    align-items: flex-end;
+    transform: translateY(-50%);
+    transition: all $transition;
+    @media screen and (max-width: 1600px) {
+      right: -50px;
+    }
+    @media screen and (max-width: 1350px) {
+      right: -20px;
+    }
+    @media screen and (max-width: 1200px) {
+      right: 0px;
+    }
+    
+    &__img {
+      width: 300px;
+      height: 240px;
+    }
+    &__link {
+      position: relative;
+      font-family: "Poppins", serif;
+      font-size: rem(24);
+      line-height: 130%;
+      letter-spacing: 0.04em;
       text-transform: uppercase;
+      color: $accent;   
+      margin-bottom: 65px;
+      margin-right: 7px;
     }
-
-    @include media-breakpoint-down(md) {
-      max-width: 100%;
-      font-size: 18px;
+    svg {
+      width: 46px;
+      height: 46px;
+      margin-bottom: 50px;  
+      margin-right: 5px;
     }
   }
-
-  // .album-card__date
-
-  &__date {
-    color: $accent;
-    display: inline-flex;
+  &__item {
+    position: relative;
+    text-transform: uppercase;
+    color: $grey-text;
+    display: flex;
     align-items: center;
-    margin-bottom: 20px;
-    font-size: 12px;
-
-    &:after,
-    &::before {
-      content: "";
-      display: inline-block;
-      width: 26px;
-      height: 1px;
-      background-color: $accent;
+    padding: 40px 0;
+    height: 140px;
+    border-top: 1px solid rgba(146, 159, 165, 0.5);
+    transition: all $transition;
+    @include media-breakpoint-down(lg) {
+      height: auto;
     }
-
-    &:after {
-      margin-left: 14px;
+    @include media-breakpoint-down(sm) {
+      text-transform: none;
     }
-
-    &:before {
-      margin-right: 14px;
+    @media screen and (max-width: 450px) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    &:last-child {
+      border-bottom: 1px solid rgba(146, 159, 165, 0.5);
+    }
+    &:focus {
+      outline: none;
+    }
+    &:hover {
+      transition: all $transition;
+      color: $grey-text;
+      text-decoration: none;
+      .blog-hover {
+        opacity: 1;
+        @include media-breakpoint-down(lg) {
+          display: none;
+        }
+      }
+      .blog__title span {
+        width: 45%;
+        @include media-breakpoint-down(lg) {
+          width: 100%;
+        }
+      }
+      div {
+        opacity: 1;
+      }
     }
   }
+  
+}
 
-  // .album-card__action
-
-  &__action {
-    margin-top: 30px;
+.pagination_blog {
+  .nav-links {
+    display: flex;
+    margin-top: 60px;
+    @include media-breakpoint-down(md) {
+      justify-content: center;
+    }
+  }
+  .page-numbers {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #BCBCBC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: rem(16);
+    line-height: 40px;
+    color: $accent;
+    margin-right: 15px;
+    &.prev {
+      svg {
+        transform: rotate(180deg);
+      }
+    }
+  }
+  a:hover {
+    text-decoration: none;
+    border-color: $accent;
+  } 
+  .current {
+    &.page-numbers{
+      color: #BCBCBC;
+      border-color: $accent;
+      &.prev, &.next {
+        border-color: #BCBCBC;
+      }
+      svg path{
+        stroke: #BCBCBC;
+      }
+    }
   }
 }
+// .album-card {
+//   background: #ffffff;
+//   box-shadow: 0px 7px 15px rgba(235, 207, 200, 0.25);
+//   // .album-card__image
+
+//   &__image {
+//     max-width: 420px;
+//     height: 353px;
+
+//     @include media-breakpoint-down(md) {
+//       max-width: 100%;
+//       height: 315px;
+//     }
+
+//     img {
+//       width: 100%;
+//       height: 100%;
+//       object-fit: cover;
+//     }
+//   }
+
+//   // .album-card__body
+
+//   &__body {
+//     padding: 35px 27px 50px;
+//     text-align: center;
+//     @include media-breakpoint-down(md) {
+//       padding: 28px 18px;
+//     }
+
+//     p {
+//       font-size: 14px;
+
+//       @include media-breakpoint-down(sm) {
+//         font-size: 12px;
+//       }
+//     }
+//   }
+
+//   // .album-card__title
+
+//   &__title {
+//     text-transform: lowercase;
+//     font: 25px/1.1 "Naum";
+//     color: $accent;
+//     max-width: 250px;
+//     margin: 0 auto 10px;
+//     &:first-letter {
+//       text-transform: uppercase;
+//     }
+
+//     @include media-breakpoint-down(md) {
+//       max-width: 100%;
+//       font-size: 18px;
+//     }
+//   }
+
+//   // .album-card__date
+
+//   &__date {
+//     color: $accent;
+//     display: inline-flex;
+//     align-items: center;
+//     margin-bottom: 20px;
+//     font-size: 12px;
+
+//     &:after,
+//     &::before {
+//       content: "";
+//       display: inline-block;
+//       width: 26px;
+//       height: 1px;
+//       background-color: $accent;
+//     }
+
+//     &:after {
+//       margin-left: 14px;
+//     }
+
+//     &:before {
+//       margin-right: 14px;
+//     }
+//   }
+
+//   // .album-card__action
+
+//   &__action {
+//     margin-top: 30px;
+//   }
+// }

@@ -3521,6 +3521,7 @@ textarea {
 
 .kindwords-hero {
   background: #FEF6F4;
+  padding: 80px 0;
 }
 
 .kindwords-hero__images {
@@ -3529,7 +3530,7 @@ textarea {
 
 .kindwords-hero__image--2 {
   position: absolute;
-  transform: translate(290px, 180px);
+  transform: translate(330px, 230px);
 }
 
 .kindwords-slider {
@@ -3541,6 +3542,11 @@ textarea {
   justify-content: center;
   align-items: center;
   padding: 35px 0px 35px 0px;
+}
+
+.kindwords-slider__content {
+  max-width: 880px;
+  margin: 0 auto;
 }
 
 .kindwords-slider__title {

@@ -1,6 +1,7 @@
 .kindwords-hero {
 
     background: #FEF6F4;
+    padding: 80px 0;
 
     // .kindwords-hero__row
 
@@ -20,7 +21,7 @@
 
     &__image--2 {
         position: absolute;
-        transform: translate(290px, 180px);
+        transform: translate(330px, 230px);
 
         @include media-breakpoint-down(sm) {
             display: none;
@@ -56,7 +57,10 @@
 
     // .kindwords-slider__content
 
-    &__content {}
+    &__content {
+        max-width: 880px;
+        margin: 0 auto;
+    }
 
     // .kindwords-slider__text
 

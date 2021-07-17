@@ -84,6 +84,11 @@
 .kindwords-carousel-controls {
     display: flex;
     justify-content: space-around;
+
+    @include media-breakpoint-down(sm) {
+        justify-content: space-between;
+    }
+
     align-items: center;
 
     position: absolute;

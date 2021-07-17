@@ -3106,6 +3106,10 @@ body footer {
   text-align: left;
 }
 
+.txt-justify {
+  text-align: justify;
+}
+
 .header {
   padding: 1.25rem 0;
   background: #fff;

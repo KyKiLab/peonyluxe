@@ -85,8 +85,8 @@
     display: flex;
     justify-content: space-around;
 
-    @include media-breakpoint-down(sm) {
-        justify-content: space-between;
+    @include media-breakpoint-down(md) {
+        transform: translateY(-60px);
     }
 
     align-items: center;

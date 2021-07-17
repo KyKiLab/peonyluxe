@@ -9473,6 +9473,10 @@ textarea {
     justify-content: center;
   }
 
+  .kindwords-carousel-controls {
+    transform: translateY(-60px);
+  }
+
   .about {
     padding-top: 24px;
     background-size: 65%;
@@ -9683,10 +9687,6 @@ textarea {
 
   .kindwords-hero__image--2 {
     display: none;
-  }
-
-  .kindwords-carousel-controls {
-    justify-content: space-between;
   }
 
   .btn-primary:hover {

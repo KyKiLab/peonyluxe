@@ -131,6 +131,7 @@ body {
   &-btn {
     @include button-reset();
     background: $transparent;
+    color: $transparent;
     width: 60px;
     height: 60px;
     &__ic {

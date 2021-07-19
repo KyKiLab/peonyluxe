@@ -3655,10 +3655,6 @@ textarea {
   column-count: 2;
 }
 
-.kindwords-info__image {
-  border-radius: 0 0 118.5px 0;
-}
-
 .kindwords-info__decor-slogan {
   transform: translate(20%, 20%) !important;
   z-index: -1;
@@ -9509,6 +9505,10 @@ textarea {
 
   .kindwords-info__text {
     column-count: 1;
+  }
+
+  .kindwords-info__image {
+    border-radius: 0 0 118.5px 0;
   }
 
   .about {

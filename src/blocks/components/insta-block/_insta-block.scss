@@ -1,7 +1,12 @@
 .insta-block-slider {
+  width: 100vw;
   &__content {
     #wis-slides {
       display: flex;
+
+      .slick-slide {
+        margin-right: 15px;
+      }
     }
   }
 }

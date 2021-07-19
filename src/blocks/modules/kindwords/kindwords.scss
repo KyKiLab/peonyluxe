@@ -1,7 +1,16 @@
 .kindwords-hero {
 
-    background: #FEF6F4;
-    padding: 80px 0;
+    
+
+    // .kindwords-hero__container
+
+    &__container{
+        background: #FEF6F4;
+        padding-bottom: 120px;
+        @include media-breakpoint-down(lg){
+            padding-bottom: 160px;
+        }
+    }
 
     // .kindwords-hero__row
 
@@ -11,26 +20,37 @@
 
     &__images {
         position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @include media-breakpoint-down(lg){
+            order: 2;
+        }
     }
 
     // .kindwords-hero__image--1
 
-    &__image--1 {}
+    &__image--1 {
+        @include media-breakpoint-down(sm){
+            width: 100%;
+        }
+    }
 
     // .kindwords-hero__image--2
 
     &__image--2 {
         position: absolute;
-        transform: translate(330px, 230px);
-
-        @include media-breakpoint-down(sm) {
-            display: none;
+        transform: translate(150px, 185px);
+        @include media-breakpoint-down(sm){
+            width: 60%;
+            transform: translate(25%, 75%);
         }
     }
 
-    // .kindwords-hero__contet
+    // .kindwords-hero__content
 
-    &__contet {}
+    &__content {}
 
     // .kindwords-hero__title
 
@@ -60,11 +80,13 @@
     &__content {
         max-width: 880px;
         margin: 0 auto;
+        text-align: center;
     }
 
     // .kindwords-slider__text
 
-    &__text {}
+    &__text {
+    }
 
     // .kindwords-slider__title
 
@@ -78,6 +100,15 @@
     &__btn {}
 }
 
+.card-kindwords-slider{
+
+    // .card-kindwords-slider__image
+    &__image{
+        @include media-breakpoint-down(md){
+            width: 180px;
+        }
+    }
+}
 
 .js-kindwords-slider {}
 
@@ -86,7 +117,8 @@
     justify-content: space-around;
 
     @include media-breakpoint-down(md) {
-        transform: translateY(-60px);
+        transform: translateY(-170px);
+        justify-content: space-between;
     }
 
     align-items: center;
@@ -98,4 +130,28 @@
 
     // .kindwords-carousel-controls__btn
     &__btn {}
+}
+
+
+.kindwords-info{
+
+    // .kindwords-info__text
+    &__text{
+        column-count: 2;
+        @include media-breakpoint-down(md){
+            column-count: 1;
+        }
+    }
+
+    // .kindwords-info__image
+    &__image{
+        border-radius: 0 0 118.5px 0;
+    }
+
+    // .kindwords-info__image
+    &__decor-slogan{
+        transform: translate(20%, 20%) !important;
+        z-index: -1;
+    }
+
 }

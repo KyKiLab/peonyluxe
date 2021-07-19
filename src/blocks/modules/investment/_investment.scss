@@ -1,0 +1,378 @@
+.investment {
+    @include media-breakpoint-down(md) {
+        margin-top: 20px;
+    }
+    .main-title {
+        margin:  20px 0;
+        @include media-breakpoint-down(md) {
+            text-transform: none;
+        }
+    }
+    &-main {
+        display: grid;
+        margin:  0px -15px 0;
+        grid-template-columns: 1fr 1.7fr 1fr;
+        grid-gap: 19px;
+        @media(max-width: 450px) {
+            grid-gap: 10px;
+            .left {
+                img {
+                    object-position: 47%;
+                }
+            }
+            .center {
+                img {
+                    object-position: 89%;
+                }
+            }
+            .right {
+                img {
+                    object-position: 20%;
+                }
+    
+            }
+            img {
+                height: 290px;
+                object-fit: cover;
+                object-position: 70%;
+            }
+        }
+    }
+
+    &-price {
+        border: 1px solid $grey-text;
+        box-sizing: border-box;
+        padding: 60px 110px;
+        @include media-breakpoint-down(lg) {
+            padding: 60px 50px;
+        }
+        @include media-breakpoint-down(md) {
+            border: none;
+            padding: 0;
+        }
+        &__descr {
+            text-align: center;
+            line-height: 170%;
+            color: $main-text-color;
+            width: 66%;
+            margin: 0 auto;
+            @include media-breakpoint-down(md) {
+                width: 100%;
+                text-align: left;
+
+            }
+        }
+        &__wrap {
+            margin: 50px 0;
+            display: flex;
+            justify-content: space-between;
+            @include media-breakpoint-down(md) {
+                flex-wrap: wrap;
+                margin: 15px 0 ;
+                padding: 40px 0 0;
+                border: 1px solid $grey-text;
+
+            }
+        }
+        &__item {
+            flex-basis: 33%;
+            @include media-breakpoint-down(md) {
+                margin-bottom: 30px;
+
+            }
+            @include media-breakpoint-down(sm) {
+                flex-basis: 100%;
+            }
+        }
+        .section-title {
+            color: $gold;
+            text-align: center;
+        }
+        &__pluses {
+            font-weight: 600;
+            line-height: 170%;
+            text-align: center;
+            color: $grey-text;
+            margin-top: 20px;
+            height: 48px;
+            @include media-breakpoint-down(md) {
+                margin-top: 10px;
+            }
+            @media (max-width: 730px) {
+                height: 60px;
+            }
+            @include media-breakpoint-down(sm) {
+                height: auto;
+            }
+        }
+        &__cost {
+            font-family: "Nanum", serif;
+            font-weight: bold;
+            font-size: rem(26);
+            line-height: 130%;
+            text-align: center;
+            text-transform: uppercase;
+            color: $blue;
+            margin-top: 1em;
+            @include media-breakpoint-down(md) {
+                font-size: rem(18);
+
+            }
+            @include media-breakpoint-down(sm) {
+                margin-top: 10px;
+            }
+        }
+    }
+
+    &-info {
+        display: flex;
+       justify-content: space-between;
+       @include media-breakpoint-down(md) {
+        flex-wrap: wrap;
+       }
+        &__title {
+            font-family: "Nanum", serif;
+            font-weight: bold;
+            font-size: rem(35);
+            line-height: 130%;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            color: $grey-text;
+            @include media-breakpoint-down(lg) {
+                font-size: rem(22);
+                letter-spacing: normal;
+            }
+            @include media-breakpoint-down(md) {
+                text-transform: none;
+            }
+        }
+        &__descr {
+            line-height: 170%;
+            color: $main-text-color;
+            margin-top: 19px;
+            margin-bottom: 15px;
+            p {
+                margin-top: 10px;
+            }
+            
+        }
+        &__img {
+            width: 550px;
+            height: auto;
+            @include media-breakpoint-down(lg) {
+                width: 100%;
+            }
+            @include media-breakpoint-down(md) {
+                margin-left: auto;
+                position: relative;
+                width: 100%;
+            }
+        }
+        .decor-slogan {
+            margin-top: 80px;
+            margin-left: 50%;
+            @include media-breakpoint-down(lg) {
+                margin-top: 50px;
+            }
+        }
+        .subtitle-decor {
+            display: block;
+            @include media-breakpoint-up(lg) {
+                margin-top: -4rem !important;
+            }
+            @include media-breakpoint-down(lg) {
+                font-size: rem(36);
+            }
+            @include media-breakpoint-down(md) {
+                margin-top: 10px !important;
+                text-align: right;
+            }
+        }
+        &__item {
+            flex-basis: calc(50% - 83px);
+            display: flex;
+            flex-direction: column;
+            @include media-breakpoint-down(lg) {
+                flex-basis: calc(50% - 20px);
+            }
+            @include media-breakpoint-down(md) {
+                flex-basis: 100%;
+            }
+            &.left {
+                @include media-breakpoint-down(md) {
+                    margin-bottom: 60px;
+                    .decor-slogan {
+                        display: none;
+                    }
+                }
+            }
+            &.right {
+                .investment-info__img {
+                    width: 80%;
+                    img {
+                        border-radius: 0px 0px 0px 40px;
+                    }
+                }
+                .subtitle-decor {
+                    margin-top: 100px !important;
+                    @include media-breakpoint-down(lg) {
+                        margin-top: 60px !important;
+                    }
+                    @include media-breakpoint-down(md) {
+                        order: 1;
+                        margin-top: 10px !important;
+                    }
+                }
+                .decor-slogan {
+                    display: none;
+                    @include media-breakpoint-down(md) {
+                        display: block;
+                        position: absolute;
+                        bottom: -60px;
+                        left: -60px;
+                        margin-left: 0;
+                    }
+                }
+               
+            }
+        }
+    }
+    &-goods {
+        margin: 0 -15px;
+        display: flex;
+        @include media-breakpoint-down(md) {
+            flex-direction: column;
+            margin: 0;
+        }
+
+        &__img {
+            min-height: 568px;
+            width: 50%;
+            @include media-breakpoint-down(md) {
+                margin: 0 -15px;
+                width: calc(100% + 30px);
+                min-height: auto;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+        img{
+            object-fit: cover;
+            height: 100%;
+        }
+        &__wrap{
+            flex-basis: 54%;
+            background-color: $pink;
+            padding: 179px 0  179px 50px;
+            @include media-breakpoint-down(md) {
+                margin: 0 -15px;
+                width: calc(100% + 30px);
+                padding: 25px;
+            }
+        }
+        .section-title {
+            @include media-breakpoint-down(md) {
+                text-transform: none;
+            }
+        }
+        &__descr {
+            margin-top: 20px;
+            width: 90%;
+            @include media-breakpoint-down(md) {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.investment-insta {
+    .slick-slide {
+        height: 475px;
+        padding: 0 20px;
+        width: 450px;
+        @include media-breakpoint-down(lg) {
+            width: 330px;
+            height: 340px;
+        }
+        @include media-breakpoint-down(md) {
+            width: 222px;
+            height: 235px;
+            padding: 0 10px;
+        }
+
+        img {
+            width: 100%;
+            height: 475px;
+            @include media-breakpoint-down(lg) {
+                width: 330px;
+            height: 340px;
+
+            }
+            @include media-breakpoint-down(md) {
+                width: 222px;
+                height: 235px;
+
+            }
+        }
+    }
+    .slick-list {
+        margin: 0 -20px;
+        @include media-breakpoint-down(lg) {
+            margin: 0 -10px;
+
+        }
+    }
+    .carousel-controls {
+        @include media-breakpoint-down(md) {
+            display: none;
+        }
+    }
+
+    .section-title {
+        text-align: center;
+        position: relative;
+        margin-bottom: 40px;
+        @include media-breakpoint-down(lg) {
+            text-transform: none;
+            text-align: left;
+        }
+        &_orange {
+            color: #DDA288 ;
+            @include media-breakpoint-down(lg) {
+                display: block;
+            }
+        }
+        .subtitle-decor {
+            letter-spacing: normal;
+            text-transform: none;
+            position: absolute;
+            left: 11%;
+            top: -50%;
+            @include media-breakpoint-down(lg) {
+                left: auto;
+                top: 25%;
+                right: 0;
+            }
+
+        }
+        .md-block {
+            display: block;
+            @include media-breakpoint-down(lg) {
+                display: none;
+            }
+        }
+        .sm-block {
+            display: none;
+            @include media-breakpoint-down(lg) {
+                display: block;
+            }
+        }
+    }
+    .section-title {
+        letter-spacing: 4px;
+        @include media-breakpoint-down(md) {
+            letter-spacing: normal;
+        }
+    }
+}

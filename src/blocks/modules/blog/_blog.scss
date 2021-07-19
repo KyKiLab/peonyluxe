@@ -30,6 +30,9 @@
     font-weight: 400;
     opacity: 0.5;
     flex-grow: 1;
+    @include media-breakpoint-down(lg) {
+      opacity: 1;
+    }
     @include media-breakpoint-down(sm) {
       font-size: rem(16);
     }
@@ -42,6 +45,22 @@
       @include media-breakpoint-down(lg) {
         width: 100%;
       }
+    }
+  }
+  &__text {
+    display: none;
+    font-family: "Poppins", serif;
+    line-height: 130%;
+    letter-spacing: 0.04em;
+    color: $accent;   
+    position: absolute;
+    right: 0;
+    @include media-breakpoint-down(lg) {
+      display: block;
+      font-size: rem(18);
+    }
+    @include media-breakpoint-down(sm) {
+      font-size: rem(14);
     }
   }
   &-hover {
@@ -62,6 +81,9 @@
     }
     @media screen and (max-width: 1200px) {
       right: 0px;
+    }
+    @include media-breakpoint-down(lg) {
+      display: none;
     }
     
     &__img {
@@ -98,6 +120,7 @@
     transition: all $transition;
     @include media-breakpoint-down(lg) {
       height: auto;
+      padding-right: 60px;
     }
     @include media-breakpoint-down(sm) {
       text-transform: none;
@@ -118,15 +141,7 @@
       text-decoration: none;
       .blog-hover {
         opacity: 1;
-        @include media-breakpoint-down(lg) {
-          display: none;
-        }
-      }
-      .blog__title span {
-        width: 45%;
-        @include media-breakpoint-down(lg) {
-          width: 100%;
-        }
+
       }
       div {
         opacity: 1;

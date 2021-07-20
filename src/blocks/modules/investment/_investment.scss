@@ -3,12 +3,32 @@
         margin-top: 20px;
     }
     &-main {
-        display: grid;
-        margin:  0px -15px 0;
-        grid-template-columns: 1fr 1.7fr 1fr;
+        display: flex;
         grid-gap: 19px;
-        @media(max-width: 450px) {
+        .center {
+            @media(min-width: 1970px) {
+                width: 1330px;
+            }
+            @include media-breakpoint-up(xxl) {
+                flex-grow: 1;
+            }
+            @include media-breakpoint-down(lg) {
+                img {
+                    object-position: 86%;
+                }
+            }
+           
+        }
+        img {
+            object-fit: cover;
+            width: 100%;
+            height: 568px
+        }
+        @media(max-width: 767px) {
             grid-gap: 10px;
+            img {
+                height: auto;
+            }
             .left {
                 img {
                     object-position: 47%;

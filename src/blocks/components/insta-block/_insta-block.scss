@@ -6,4 +6,31 @@
   }
   
 }
-
+.insta-block {
+  &__title {
+    position: relative;
+    width: 66%;
+    margin-left: auto;
+    @include media-breakpoint-down(md) {
+      width: 80%;
+    }
+    @include media-breakpoint-down(sm) {
+     width: 100%;
+     margin-right: auto;
+     margin-left: 0;
+     a {
+       display: block;
+     }
+    }
+    .subtitle-decor {
+      position: absolute;
+      top: -70px;
+      left: -24%;
+        @include media-breakpoint-down(sm) {
+          top: -10px;
+          left: auto;
+          right: 0;
+        }
+    }
+  }
+}

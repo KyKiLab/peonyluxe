@@ -8,11 +8,11 @@ jQuery(function ($) {
     // const $sliderCounterTotal = $sliderContainer.find(".js-counter-total");
 
     $slider.slick({
-      slidesToShow: 3,
+      slidesToShow: 4,
       slidesToScroll: 1,
       // dots: true,
-      fade: true,
-      infinite: false,
+      fade: false,
+      infinite: true,
       // arrows: true,
       // appendDots: $sliderControlsDots,
       // prevArrow: $sliderContainer.find(".carousel-controls-btn--prev"),

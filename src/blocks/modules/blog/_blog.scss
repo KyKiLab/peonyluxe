@@ -1,4 +1,8 @@
 .breadcrumb {
+  display: block;
+  margin: 0 auto;
+  max-width: 670px;
+
   &-item {
     font-family: "Poppins", serif;
     font-size: rem(14);

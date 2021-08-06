@@ -11,12 +11,6 @@
     padding: rem(10) 0;
   }
 
-  &__container {
-    @include media-breakpoint-up(lg) {
-      min-height: 90px;
-    }
-  }
-
   &__burger {
     @media screen and (min-width: 950.99px) {
       display: none !important;
@@ -28,12 +22,32 @@
       display: none !important;
     }
   }
-}
-
-.header-logo {
-  max-width: 134px;
-
-  @include media-breakpoint-down(md) {
-    max-width: 90px;
+  &-logo {
+    margin-bottom: 1.25rem;
+    @media screen and (max-width: 950.99px) {
+      margin-bottom: 0;
+    }
+  }
+  &-social {
+    display: none !important;
+    
+  }
+  &__container {
+    display: block;
+    margin: 0 auto;
+    max-width: 670px;
+    text-align: center;
+    @media screen and (max-width: 950.99px) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+  }
+  &-tel {
+    display: none;
+    @media screen and (max-width: 950.99px) {
+      display: block;
+    }
   }
 }
+

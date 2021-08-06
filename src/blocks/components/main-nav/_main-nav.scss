@@ -1,14 +1,26 @@
 .main-nav {
   @media screen and (max-width: 950px) {
     position: fixed;
-    display: none;
+    top: 0px;
   }
 
   ul {
     display: flex;
     li {
       &:not(:last-child) {
-        margin-right: rem(26);
+        margin-right: rem(35);
+        position: relative;
+        &::after {
+          position: absolute;
+          right: -27px;
+          top: 49%;
+          transform: translateY(-50%);
+          content: " ";
+          width: 19px;
+          height: 0;
+          display: block;
+          border-top: 0.5px solid #828282;
+        }
       }
 
       a {
@@ -17,20 +29,23 @@
         font-size: rem(14);
         @include transition-colors();
         padding-top: 4px;
-        border-top: 1px solid $transparent;
+        letter-spacing: 0.04em;
         &:hover {
           text-decoration: none;
-          color: $gold;
+          color: $accent;
+        }
+        &:focus {
+          outline: none;
         }
       }
 
       &.current-menu-item {
         a {
-          color: $gold;
-          border-color: $gold;
+          color: $accent;
+          border-color: $accent;
           &:hover {
             text-decoration: none;
-            color: $gold;
+            color: $accent;
           }
         }
       }

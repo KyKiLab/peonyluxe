@@ -1,4 +1,7 @@
 .mob-menu-show {
+  background: $primary-bg-color;
+  z-index: 99;
+  position: relative;
     .header {
       &__container {
         flex-direction: column;
@@ -22,21 +25,25 @@
             display: block;
             border-top: 1px solid rgba(100, 110, 115, 0.5);
             margin-top: 50px;
-            li::after {
-                display: none;
-              }
+
             li {
               text-align: left;
               border-bottom: 1px solid rgba(100, 110, 115, 0.5);
               margin: 0;
-              padding: 11px 0;
+              &::before {
+                display: none;
+              }
+              &::after {
+                display: none;
+              }
               a {
                 font-size: rem(16);
                 line-height: 150%;
                 letter-spacing: 0.04em;
                 color: $grey-text;
                 text-transform: none;
-  
+                display: block;
+                padding: 15px 0 11px;;
               }
             }
   
@@ -67,7 +74,6 @@
           justify-content: center;
           align-items: center;
         }
-  
       }
     }
   }

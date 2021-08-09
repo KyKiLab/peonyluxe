@@ -37,19 +37,16 @@ body {
   color: $main-text-color;
   background: $primary-bg-color;
   font-family: "Poppins", serif;
-  padding-top: rem(130);
   padding-bottom: rem(130);
   font-size: rem(14);
   line-height: 1.7;
   overflow-x: hidden;
   @media screen and (max-width: 950px) {
-    padding-top: rem(100);
     padding-bottom: rem(100);
   }
 
   @include media-breakpoint-down(sm) {
     font-size: rem(12);
-    padding-top: rem(60);
     padding-bottom: rem(60);
   }
 

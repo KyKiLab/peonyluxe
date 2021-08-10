@@ -1,20 +1,10 @@
 .header {
   padding: rem(20) 0;
-  background: $primary-bg-color;
-  width: 100%;
-  position: fixed;
-  left: 0;
+  position: absolute;
   top: 0;
-  z-index: 99;
-
+  width: 100%;
   @include media-breakpoint-down(sm) {
     padding: rem(10) 0;
-  }
-
-  &__container {
-    @include media-breakpoint-up(lg) {
-      min-height: 90px;
-    }
   }
 
   &__burger {
@@ -28,12 +18,32 @@
       display: none !important;
     }
   }
-}
-
-.header-logo {
-  max-width: 134px;
-
-  @include media-breakpoint-down(md) {
-    max-width: 90px;
+  &-logo {
+    margin-bottom: 1.25rem;
+    @media screen and (max-width: 950.99px) {
+      margin-bottom: 0;
+    }
+  }
+  &-social {
+    display: none !important;
+    
+  }
+  &__container {
+    display: block;
+    margin: 0 auto;
+    max-width: 670px;
+    text-align: center;
+    @media screen and (max-width: 950.99px) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+  }
+  &-tel {
+    display: none;
+    @media screen and (max-width: 950.99px) {
+      display: block;
+    }
   }
 }
+

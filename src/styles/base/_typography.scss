@@ -37,6 +37,9 @@
   text-transform: uppercase;
   letter-spacing: 0.04em;
   color: $grey-text;
+  &_gold {
+    color: $gold;
+  }
 
   @include media-breakpoint-down(sm) {
     font-size: rem(22);
@@ -44,6 +47,7 @@
     letter-spacing: normal;
   }
 }
+
 
 .banner-title {
   font-family: "Nanum", serif;
@@ -75,7 +79,9 @@
 .tt-none {
   text-transform: none;
 }
-
+.tt-uppercase {
+text-transform: uppercase !important;
+}
 .txt-center {
   text-align: center;
   @include media-breakpoint-down(sm) {

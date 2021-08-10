@@ -1,15 +1,4 @@
-.breadcrumb {
-  &-item {
-    font-family: "Poppins", serif;
-    font-size: rem(14);
-    line-height: 21px;
-    text-decoration-line: underline;
-    color: #A5A5A5;
-  }
-  .slash {
-    color: #E0E0E0;
-  }
-}
+
 .blog {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));

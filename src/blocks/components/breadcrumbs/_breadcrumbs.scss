@@ -1,0 +1,27 @@
+.breadcrumb {
+
+  position: absolute;
+  top: 150px;
+  width: 100%;
+  @media screen and (max-width: 950.99px) {
+    top: 110px;
+  }
+  @include media-breakpoint-down(md) {
+    top: 90px;
+  }
+  &__wrap {
+    display: block;
+    margin: 0 auto;
+    max-width: 670px;
+  }
+  &-item {
+    font-family: "Poppins", serif;
+    font-size: rem(14);
+    line-height: 21px;
+    text-decoration-line: underline;
+    color: #A5A5A5;
+  }
+  .slash {
+    color: #E0E0E0;
+  }
+}

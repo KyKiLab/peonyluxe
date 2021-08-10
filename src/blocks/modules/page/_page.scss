@@ -1,9 +1,30 @@
 .page {
+  padding-top: rem(180);
+  @media screen and (max-width: 950.99px) {
+    padding-top: rem(100);
+  }
   &__item-gap {
     margin-bottom: 128px;
-
     @include media-breakpoint-down(md) {
       margin-bottom: 66px;
+    }
+  }
+  &-blog {
+    padding-top: rem(200);
+    @media screen and (max-width: 950.99px) {
+      padding-top: rem(150);
+    }
+    @include media-breakpoint-down(md) {
+      padding-top: rem(120);
+    }
+  }
+  &-album {
+    padding-top: 0;
+    @media screen and (max-width: 950.99px) {
+      padding-top: rem(150);
+    }
+    @include media-breakpoint-down(md) {
+      padding-top: rem(130);
     }
   }
 }

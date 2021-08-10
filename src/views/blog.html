@@ -4,13 +4,17 @@
   <body>
     @@include("../blocks/modules/header/header.html")
 
-    <main class="page">
+    <nav class="breadcrumb mb-4">
       <div class="container">
-        <nav class="breadcrumb mb-4">
-          <a class="breadcrumb-item link" href="#">Main</a> <span class="slash">/</span>
-          <a class="breadcrumb-item link" href="#">Blog</a> 
-        </nav>
+          <div class="breadcrumb__wrap">
+          <a class="breadcrumb-item link" href="/">Main</a> <span class="slash">/</span>
+          <a class="breadcrumb-item link" href="#">Blog</a>
+          </div>
+      </div>
+    </nav>
 
+    <main class="page page-blog">
+      <div class="container">
         <div class="row justify-content-center mb-4">
           <div class="col-7 col-md-5 col-lg-4">
             <div class="flex-column">

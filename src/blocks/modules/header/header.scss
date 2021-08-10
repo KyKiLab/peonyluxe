@@ -1,5 +1,7 @@
 .header {
   padding: rem(20) 0;
+  position: absolute;
+  top: 0;
   width: 100%;
   @include media-breakpoint-down(sm) {
     padding: rem(10) 0;

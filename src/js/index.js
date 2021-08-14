@@ -7,6 +7,7 @@ import "./import/modules";
 import "../blocks/components/main-slider/main-slider-tabs";
 import "../blocks/components/insta-block/slider";
 import "../blocks/components/testimonials/slider";
+import "../blocks/components/read-more/read-more";
 
 var collapseElementList = [].slice.call(document.querySelectorAll(".collapse"));
 collapseElementList.map(function (collapseEl) {

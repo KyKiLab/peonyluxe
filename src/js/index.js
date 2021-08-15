@@ -9,6 +9,7 @@ import "../blocks/components/insta-block/slider";
 import "../blocks/components/testimonials/slider";
 import "../blocks/components/video-banner/video-banner";
 import "../blocks/components/about/about";
+import "../blocks/components/destinations/destinations";
 
 
 

@@ -1,0 +1,69 @@
+.destinations {
+    &__item {
+        background-color: rgba(204, 182, 159, 0.5);
+        position: relative;
+    }
+    &__title {
+        font-size: 36px;
+        line-height: 170%;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        position: absolute;
+        z-index: 3;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 30px;
+        @include media-breakpoint-down(md) {
+            font-size: 24px;
+            line-height: 170%;
+        }
+    }
+    img {
+        width: 350px;
+        height: 350px;
+        object-fit: cover;
+        object-position: center;
+        position: relative;
+        z-index: -1;
+        @include media-breakpoint-down(md) {
+            width: 280px;
+            height: 300px;
+        }
+        @include media-breakpoint-down(sm) {
+            width: 200px;
+            height: 220px;
+        }
+    }
+    .slick-slider {
+        margin: 0 auto;
+    }
+    .slick-slide {
+        width: 350px;
+        @include media-breakpoint-down(md) {
+            width: 280px;
+        }
+        @include media-breakpoint-down(sm) {
+            width: 200px;
+        }
+    }
+    .slick-center {
+        .destinations__title {
+            border-bottom: 3px solid #fff;
+        }
+    }
+
+    .carousel {
+        position: relative;
+    }
+    .carousel-controls-btn {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        &--prev {
+            left: -90px;
+        }
+        &--next {
+            right: -90px;
+        }
+    }
+}

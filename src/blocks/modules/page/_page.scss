@@ -9,6 +9,9 @@
       margin-bottom: 66px;
     }
   }
+  &-main {
+    padding-top: 0 ;
+  }
   &-blog {
     padding-top: rem(200);
     @media screen and (max-width: 950.99px) {

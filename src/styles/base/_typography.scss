@@ -1,19 +1,18 @@
 .main-title {
-  font-family: "Nanum", serif;
-  font-size: rem(72);
-  line-height: 1.3;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-  color: $grey-text;
-
+  font-family: "Haigrast", serif;
+  font-size: rem(96);
+  line-height: 125px;
+  color: $gold;
+  font-weight: 400;
+  text-align: center;
   @include media-breakpoint-down(xl) {
     font-size: rem(64);
   }
 
   @include media-breakpoint-down(sm) {
     text-transform: none;
-    font-size: rem(32);
+    font-size: rem(48);
+    line-height: 100%;
   }
 
   &--md {

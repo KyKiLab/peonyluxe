@@ -3,6 +3,7 @@
   position: absolute;
   top: 0;
   width: 100%;
+  z-index: 2;
   @include media-breakpoint-down(sm) {
     padding: rem(10) 0;
   }

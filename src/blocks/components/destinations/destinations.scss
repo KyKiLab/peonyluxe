@@ -2,6 +2,11 @@
     &__item {
         background-color: rgba(204, 182, 159, 0.5);
         position: relative;
+        a {
+            color: #fff !important;
+            text-decoration: none !important;
+            cursor: pointer !important;
+        }
     }
     &__title {
         font-size: 36px;
@@ -18,6 +23,7 @@
             line-height: 170%;
         }
     }
+
     img {
         width: 350px;
         height: 350px;

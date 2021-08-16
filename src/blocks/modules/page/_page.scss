@@ -8,6 +8,15 @@
     @include media-breakpoint-down(md) {
       margin-bottom: 66px;
     }
+    &_pink {
+      background-color: $pink;
+    }
+    &-lg-pink {
+      @include media-breakpoint-up(lg) {
+        background-color: $pink;
+
+      }
+    }
   }
   &-blog {
     padding-top: rem(200);

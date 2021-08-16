@@ -1,16 +1,15 @@
 .footer {
   position: relative;
-  background-color: $pink;
+  background-color: $peach;
   padding: 74px 80px;
   font-size: 12px;
   color: #949da1;
-
   margin: 15px 0;
-  @include media-breakpoint-down(md) {
+  @include media-breakpoint-down(lg) {
     text-align: center;
+    padding: 40px;
   }
   @include media-breakpoint-down(sm) {
-    padding: 30px 70px;
     width: 100vw;
     margin-left: calc(-50vw + 50%);
     text-align: center;
@@ -37,31 +36,85 @@
   a:not([class]) {
     color: inherit;
   }
+  &-logo {
+    width: 92px;
+    height: 97px;
+    img {
+      width: 100%;
+    }
+    @include media-breakpoint-down(lg) {
+      margin: 0 auto 30px;
+    }
+  }
+  &-bottom {
+    margin-top: 40px;
+    list-style-type: none;
+    a {
+      font-size: 12px;
+      line-height: 18px;
+      color: rgba(100, 110, 115, 0.8);
+      font-weight: 300;
+      @include media-breakpoint-down(lg) {
+        margin-bottom: 20px;
+        display: block;
+      }
+    }
+    .row {
+      @include media-breakpoint-down(lg) {
+          flex-direction: column-reverse;
+      }
+    }
+  }
+  .tel-link {
+    @include media-breakpoint-down(lg) {
+      display: flex;
+      justify-content: center;
+    }
+  }
 }
 
 .footer-nav {
   color: $grey-text;
   font-size: 14px;
   text-transform: uppercase;
+  &__title {
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 20px;
+    @include media-breakpoint-down(lg) {
+text-align: center;
+    }
+  }
 
   ul {
-    @include row-flex();
-    justify-content: space-between;
+    column-count: 2;
+    column-gap: 0px;
 
-    @include md-block {
-      justify-content: center;
-    }
     li {
-      @include col();
-      @include size(5);
-      @include size-sm(6);
+      font-weight: 300;
+      font-size: 12px;
+      line-height: 18px;
+      color: rgba(100, 110, 115, 0.8);
       &:not(:last-child) {
-        margin-bottom: 20px;
+        margin-bottom: 5px;
       }
-    }
-  }
 
-  @include media-breakpoint-down(sm) {
-    text-align: center;
-  }
+    }
+    @include media-breakpoint-down(lg) {
+      column-gap: 50px
+    }
+    @include media-breakpoint-down(sm) {
+      column-gap: 20px
+
+    }
+}
+@include media-breakpoint-down(lg) {
+  text-align: left;
+  max-width: 280px;
+  margin: 0 auto 40px;
+}
+
 }

@@ -1,6 +1,6 @@
 .tel-link {
   font-size: 20px;
-  color: $gold;
+  color: $accent;
   display: flex;
   align-items: center;
 
@@ -14,7 +14,7 @@
   }
 
   &:hover {
-    color: $gold;
+    color: $accent;
   }
 
   &-sm {

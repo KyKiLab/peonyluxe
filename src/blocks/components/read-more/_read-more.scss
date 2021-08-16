@@ -1,0 +1,26 @@
+@include media-breakpoint-down(lg) {
+    .extra_content {
+      display: none;
+    }
+    #read_more {
+      display: block;
+      border: none;
+      text-transform: lowercase;
+      margin-left: auto;
+      color: $grey-text;
+      &:hover, 
+      &:focus,
+      &:focus-within {
+        border: none;
+        outline: none;
+      }
+    }
+  }
+  
+  .read_more  {
+    display: none;
+  }
+  
+  .show {
+     display: inline !important;
+  }

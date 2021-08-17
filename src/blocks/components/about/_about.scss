@@ -1,49 +1,111 @@
 .about {
-  background: url("../img/bg-about.png") no-repeat left center / contain;
+  background: url("../img/bg-about.png") no-repeat left bottom / 510px;
   margin-bottom: 70px;
   position: relative;
   padding-top: 185px;
-  @include media-breakpoint-down(md) {
-    padding-top: 24px;
-    background-size: 65%;
-    background-position: 50% 100%;
+  display: flex;
+  @include media-breakpoint-down(xl) {
+    background-size: 48%;
+  }
+  @include media-breakpoint-down(lg) {
+    flex-direction: column-reverse;
+    padding-top: 0px;
+    background: url("../img/bg-about.png") no-repeat center bottom / 450px;
   }
   @include media-breakpoint-down(sm) {
-    background-size: 85%;
-    background-position: 0% 100%;
+    background: url("../img/bg-about.png") no-repeat center bottom / 300px;
+  }
+  @media(max-width: 450px) {
+    background-size: 280px;
   }
 
   &__deco {
-    position: absolute;
-    top: 0;
-    right: 0;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-
-    @include media-breakpoint-down(md) {
-      flex-direction: column-reverse;
-      align-items: flex-end;
+   position: absolute;
+   right: 0;
+   bottom: -50px;
+    @include media-breakpoint-down(lg) {
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: -150px;
+      right: auto;
     }
-
     @include media-breakpoint-down(sm) {
-      top: -70px;
-      right: 50px;
+      bottom: -90px;
     }
+
   }
 
   &__content {
+    position: relative;
+    flex-basis: 50%;
+    align-self: flex-end;
+    img {
+      border-radius: 0px 45px 0px 0px;
+      width: 312px;
+      height: 397px;  
+      display: block;
+      margin: 0 auto;
+    }
+    @include media-breakpoint-down(lg) {
+      align-self: center;
+      margin-top: 150px;
+
+    }
     @include media-breakpoint-down(md) {
       position: relative;
-      margin-top: 200px;
     }
 
     @include media-breakpoint-down(sm) {
       margin-top: 100px;
       img {
         width: 190px;
+        height: 243px;
         border-radius: 0px 35px 0px 0px;
       }
     }
+    .decor-slogan {
+      position: absolute;
+      right: 14%;
+      top: -12%;
+      @include media-breakpoint-down(xl) {
+        right: 9%;
+      }
+      @include media-breakpoint-down(lg) {
+        right: -20%;
+      }
+    }
   }
+
+  &__text {
+    flex-basis: 50%;
+    position: relative;
+  }
+}
+
+
+@include media-breakpoint-down(lg) {
+  .extra_content-about {
+    display: none;
+  }
+  #read_more-about {
+    display: block;
+    border: none;
+    text-transform: lowercase;
+    margin-left: auto;
+    color: $grey-text;
+    &:hover, 
+    &:focus,
+    &:focus-within {
+      border: none;
+      outline: none;
+    }
+  }
+}
+
+.read_more-about  {
+  display: none;
+}
+
+.show-about {
+   display: inline !important;
 }

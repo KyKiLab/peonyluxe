@@ -1,6 +1,6 @@
 .info-block-img-deco {
   @include media-breakpoint-down(sm) {
-    background: url("../img/bg-subtract-left.svg") no-repeat left / contain;
+    background: url("../img/bg-subtract-left.svg") no-repeat center / contain;
     padding-top: 40px;
     display: flex;
     flex-direction: column;
@@ -13,6 +13,12 @@
     }
     img {
       border-radius: 0 65px 0 0;
+      width: 1100px;
+      height: 440px;
+      @include media-breakpoint-down(md) {
+        width: 190px;
+        height: 240px;
+      }
     }
   }
 }

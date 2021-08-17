@@ -1,8 +1,5 @@
 .insta-block-slider {
-  width: calc(100vw - 400px);
-  @include media-breakpoint-down(xl) {
-    width: calc(100vw - 50px);
-  }
+  width: 100vw;
   &__content {
     #wis-slides {
       display: flex;

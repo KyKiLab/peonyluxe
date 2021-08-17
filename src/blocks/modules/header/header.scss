@@ -20,7 +20,9 @@
     }
   }
   &-logo {
+    width: 64px;
     margin-bottom: 1.25rem;
+    margin: 0 auto;
     @media screen and (max-width: 950.99px) {
       margin-bottom: 0;
     }

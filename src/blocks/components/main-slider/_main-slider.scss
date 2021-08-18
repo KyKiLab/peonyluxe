@@ -78,6 +78,8 @@
     text-transform: uppercase;
     letter-spacing: 4px;
     text-align: center;
+    text-decoration: none;
+    color: $grey-text;
     @include media-breakpoint-down(md) {
       font-size: rem(18);
     }

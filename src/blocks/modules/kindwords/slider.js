@@ -24,7 +24,7 @@ $(function () {
         appendDots: $sliderControlsDots,
         prevArrow: $sliderContainer.find(".carousel-controls-btn--prev"),
         nextArrow: $sliderContainer.find(".carousel-controls-btn--next"),
-
+        fade: true,
         responsive: [
             {
                 breakpoint: 600,

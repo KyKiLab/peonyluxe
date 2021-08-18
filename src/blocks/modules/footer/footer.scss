@@ -66,9 +66,11 @@
     }
   }
   .tel-link {
+    margin-bottom: 40px;
     @include media-breakpoint-down(lg) {
       display: flex;
       justify-content: center;
+      margin-bottom: 20px;
     }
   }
 }

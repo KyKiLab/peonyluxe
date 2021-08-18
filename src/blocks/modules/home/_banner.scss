@@ -1,14 +1,19 @@
 .home-banner {
+
   &__item {
     position: relative;
-    min-height: 825px;
-    background-image: url('../img/main/home-banner.jpeg');
     background-size: cover;
     background-position: right bottom;
-    padding-top: 15%;
-    @include media-breakpoint-down(md) {
-      min-height: 665px;
+    padding-top: 10%;
+    height: 825px;
+    @include media-breakpoint-down(xxl) {
+      height: 100vh;
+      padding-top: 12%;
     }
+    @include media-breakpoint-down(lg) {
+      padding-top: 15%;
+    }
+      
     .btn {
       position: absolute;
       bottom: 10%;

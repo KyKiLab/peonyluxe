@@ -1,5 +1,5 @@
 .header {
-  padding: rem(20) 0;
+  padding: rem(24) 0 rem(15);
   position: absolute;
   top: 0;
   width: 100%;
@@ -7,7 +7,6 @@
   @include media-breakpoint-down(sm) {
     padding: rem(10) 0;
   }
-
   &__burger {
     @media screen and (min-width: 950.99px) {
       display: none !important;
@@ -15,8 +14,10 @@
   }
 
   &__menu {
+    padding-top: 20px;
     @media screen and (max-width: 950.99px) {
       display: none !important;
+      padding-bottom: 0;
     }
   }
   &-logo {

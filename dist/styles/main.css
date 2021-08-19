@@ -3364,6 +3364,10 @@ textarea {
   padding-top: 0;
 }
 
+.page-slider {
+  overflow-x: hidden;
+}
+
 .home-banner__item {
   position: relative;
   background-size: cover;
@@ -5181,6 +5185,10 @@ textarea {
 
 .insta-block-slider__content #wis-slides .slick-slide {
   margin-right: 15px;
+}
+
+.insta-block {
+  padding-top: 50px;
 }
 
 .insta-block__title {
@@ -11820,6 +11828,10 @@ textarea {
 
   .gallery-item__link {
     font-size: 0.75rem;
+  }
+
+  .insta-block {
+    padding-top: 0;
   }
 
   .insta-block__title {

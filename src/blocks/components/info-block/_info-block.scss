@@ -1,18 +1,124 @@
 .info-block-img-deco {
-  @include media-breakpoint-down(sm) {
-    background: url("../img/bg-subtract-left.svg") no-repeat left / contain;
-    padding-top: 40px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 
-    picture {
-      display: flex;
-      justify-content: center;
-      margin: 0 auto;
+
+    img {
+      width: 100%;
+      height: 440px;
+      object-fit: cover;
+      object-position: center;
+      @include media-breakpoint-down(md) {
+        height: 320px;
+      }
+    }
+  
+}
+
+.info-block__text {
+  display: flex;
+  text-align: left;
+  justify-content: space-between;
+  margin-top: 30px;
+  @include media-breakpoint-down(lg) {
+    margin: 0;
+    flex-direction: column;
+  }
+  p {
+    flex-basis: calc(50% - 40px);
+  }
+}
+@include media-breakpoint-down(lg) {
+  .extra_content-info {
+    display: none;
+  }
+  #read_more-info {
+    display: block;
+    border: none;
+    text-transform: lowercase;
+    margin-left: auto;
+    color: $grey-text;
+    &:hover, 
+    &:focus,
+    &:focus-within {
+      border: none;
+      outline: none;
+    }
+  }
+}
+
+.read_more-info  {
+  display: none;
+}
+
+.show-info {
+   display: block !important;
+}
+
+.info-block {
+  &-happy {
+    position: relative;
+    @include media-breakpoint-down(md) {
+      padding-top: 190px;
+      background: url("../img/bg-subtract-left.svg") no-repeat top /
+      434px;
+    }
+    @include media-breakpoint-down(sm) {
+      padding-top: 100px;
+      background: url("../img/bg-subtract-left.svg") no-repeat top /
+      300px;
     }
     img {
-      border-radius: 0 65px 0 0;
+      width: 440px;
+      height: 425px;
+      @include media-breakpoint-down(md) {
+        width: 250px;
+        height: 300px;
+        border-radius: 0px 65px 0px 0px;
+        margin: 0 auto;
+        display: block;
+      }
+      @include media-breakpoint-down(sm) {
+        width: 189.7px;
+        height: 243px;
+      }
+
+
+    }
+    .flex-column {
+      @include media-breakpoint-down(md) {
+        display: block;
+        width: auto;
+      }
+      
+    }
+    .decor-slogan {
+      @include media-breakpoint-down(md) {
+        position: absolute;
+        width: 78px;
+        height: 78px;
+        top: 163px;
+        left: 50%;
+        transform: translateX(80px);
+
+        z-index: -2;
+      }
+      @include media-breakpoint-down(sm) {
+        top: 78px;
+        left: 50%;
+        transform: translateX(50px);
+      }
+
+    }
+    
+    .subtitle-decor {
+      @include media-breakpoint-down(md) {
+        position: absolute;
+        top: 75px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      @include media-breakpoint-down(sm) {
+        top: 35px;
+      }
     }
   }
 }

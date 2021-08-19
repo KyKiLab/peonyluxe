@@ -10,6 +10,9 @@ import "../blocks/components/testimonials/slider";
 import "../blocks/components/video-banner/video-banner";
 import "../blocks/components/about/about";
 import "../blocks/components/destinations/destinations";
+import "../blocks/components/info-step-block/info-step";
+import "../blocks/components/info-block/info-block";
+
 
 import "../blocks/components/read-more/read-more";
 

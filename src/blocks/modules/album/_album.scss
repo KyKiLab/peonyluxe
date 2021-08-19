@@ -3,7 +3,7 @@
     &-main {
         &__img {
             width: 100%;
-            max-height: 825px;
+            height: 100vh;
             object-fit: cover;
             object-position: left 37%;
             @media(min-width: 1500px) {
@@ -11,6 +11,9 @@
             }
             @include media-breakpoint-down(xl) {
                 object-position: left 42%;
+            }
+            @include media-breakpoint-up(xxl) {
+                height: 825px;
             }
         }
     }

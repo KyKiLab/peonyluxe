@@ -37,7 +37,7 @@
             font-size: rem(48);
             position: absolute;
             bottom: 0px;
-            left: 28%;
+            left: 55%;
             @include media-breakpoint-down(sm) {
                 font-size: rem(24);
                 bottom: auto;
@@ -59,7 +59,6 @@
             width: 530px;
             height: 514px;
             margin: 60px 0;
-            background-image: url('../img/meet-us/main.jpeg');
             background-size: cover;
             border-radius: 71px 0px 0px 0px;
             background-repeat: no-repeat;
@@ -277,7 +276,6 @@
             position: relative;
             width: 420px;
             height: 497px;
-            background-image: url('../img/meet-us/features-1.jpeg');
             background-size: cover;
             border-radius: 0px 0px 0px 40px;
             background-repeat: no-repeat;

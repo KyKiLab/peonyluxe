@@ -1,26 +1,26 @@
-@include media-breakpoint-down(lg) {
-    .extra_content {
-      display: none;
+.read_more-content {
+  @include media-breakpoint-down(lg) {
+    display: none !important;
+
+    &.show {
+      display: inline !important;
     }
-    #read_more {
-      display: block;
+  }
+}
+
+.read_more-btn {
+  display: none;
+  @include media-breakpoint-down(lg) {
+    display: block;
+    border: none;
+    text-transform: lowercase;
+    margin-left: auto;
+    color: $grey-text;
+    &:hover,
+    &:focus,
+    &:focus-within {
       border: none;
-      text-transform: lowercase;
-      margin-left: auto;
-      color: $grey-text;
-      &:hover, 
-      &:focus,
-      &:focus-within {
-        border: none;
-        outline: none;
-      }
+      outline: none;
     }
   }
-  
-  .read_more  {
-    display: none;
-  }
-  
-  .show {
-     display: inline !important;
-  }
+}

@@ -1,55 +1,55 @@
-.overlay{
-    position:fixed;
-    height:100%;
-    width:100%;
-    left:0;
-    top:0;
-    background:rgba(0,0,0,0.5);
-    display:block;
-    z-index: 4;
+.overlay {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  z-index: 4;
+}
+.popup {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 844px;
+  height: 631px;
+  background: linear-gradient(131.43deg, #fdfbfa 10.48%, #fff7f5 85.26%);
+  box-shadow: 4px 4px 40px rgba(124, 90, 54, 0.25);
+  @include media-breakpoint-down(lg) {
+    width: 550px;
+    height: 500px;
   }
-  .popup{
-    position:absolute;
-    left:50%;
-    top:50%;
-    transform: translate(-50%, -50%);
-    background:#fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 844px;
-    height: 631px;
-    background: linear-gradient(131.43deg, #FDFBFA 10.48%, #FFF7F5 85.26%);
-    box-shadow: 4px 4px 40px rgba(124, 90, 54, 0.25);
-    @include media-breakpoint-down(lg) {
-      width: 550px;
-      height: 500px;
-      }
+  @include media-breakpoint-down(md) {
+    width: calc(100vw - 40px);
+    height: calc(100vh - 40px);
+    padding: 0 30px;
+  }
+  img {
+    margin-bottom: 40px;
     @include media-breakpoint-down(md) {
-      width: calc(100vw - 40px);
-      height:calc(100vh - 40px);
-      padding: 0 30px;
-    }
-    img {
-      margin-bottom: 40px;
-      @include media-breakpoint-down(md) {
-        display: none;
-      }
-    }
-    p {
-      width: 65%;
-      margin: 0 auto;
-      text-align: center;
-      @include media-breakpoint-down(md) {
-        width: 100%;
-      }
-    }
-    .section-title {
-      text-transform: uppercase !important;
-      @include media-breakpoint-down(md) {
-        font-size: 24px;
-        line-height: 30px;
-      }
+      display: none;
     }
   }
+  p {
+    width: 65%;
+    margin: 0 auto;
+    text-align: center;
+    @include media-breakpoint-down(md) {
+      width: 100%;
+    }
+  }
+  .section-title {
+    text-transform: uppercase !important;
+    @include media-breakpoint-down(md) {
+      font-size: 24px;
+      line-height: 30px;
+    }
+  }
+}

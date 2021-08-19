@@ -14,12 +14,24 @@
     &-lg-pink {
       @include media-breakpoint-up(lg) {
         background-color: $pink;
-
+      }
+    }
+    &-md-pink {
+      @include media-breakpoint-down(lg) {
+        background-color: $pink;
       }
     }
   }
   &-main {
     padding-top: 0 ;
+    @media screen and (max-width: 950.99px) {
+      padding-top: rem(100);
+
+    }
+    @include media-breakpoint-down(sm) {
+      padding-top: rem(90);
+
+    }
   }
   &-blog {
     padding-top: rem(200);
@@ -38,5 +50,8 @@
     @include media-breakpoint-down(md) {
       padding-top: rem(130);
     }
+  }
+  &-slider {
+    overflow-x: hidden;
   }
 }

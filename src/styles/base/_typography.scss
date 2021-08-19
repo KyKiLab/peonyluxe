@@ -1,4 +1,35 @@
 .main-title {
+  font-family: "Nanum", serif;
+  font-size: rem(64);
+  line-height: 80px;
+  color: $grey-text;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  @include media-breakpoint-down(xl) {
+    font-size: rem(54);
+  }
+
+  @include media-breakpoint-down(sm) {
+    text-transform: none;
+    font-size: rem(32);
+    line-height: 40px;
+  }
+
+  &--md {
+    font-size: rem(64);
+
+    @include media-breakpoint-down(xl) {
+      font-size: rem(52);
+    }
+
+    @include media-breakpoint-down(sm) {
+      font-size: rem(32);
+    }
+  }
+}
+
+.page__title {
   font-family: "Haigrast", serif;
   font-size: rem(96);
   line-height: 125px;
@@ -13,18 +44,6 @@
     text-transform: none;
     font-size: rem(48);
     line-height: 100%;
-  }
-
-  &--md {
-    font-size: rem(64);
-
-    @include media-breakpoint-down(xl) {
-      font-size: rem(52);
-    }
-
-    @include media-breakpoint-down(sm) {
-      font-size: rem(32);
-    }
   }
 }
 
@@ -44,6 +63,23 @@
     font-size: rem(22);
     text-transform: none;
     letter-spacing: normal;
+  }
+}
+
+.section-subtitle {
+  font-family: "Nanum", serif;
+  font-size: rem(25);
+  line-height: 1.5;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: $grey-text;
+  @include media-breakpoint-down(sm) {
+    font-size: rem(22);
+    text-transform: none;
+    letter-spacing: normal;
+    line-height: 1.3;
+
   }
 }
 

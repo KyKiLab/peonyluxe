@@ -12,6 +12,10 @@
   
 }
 .insta-block {
+  padding-top: 50px;
+  @include media-breakpoint-down(sm) {
+    padding-top: 0;
+  }
   &__title {
     position: relative;
     width: 66%;
@@ -37,5 +41,8 @@
           right: 0;
         }
     }
+  }
+  &__wrap {
+    margin-bottom: 40px;
   }
 }

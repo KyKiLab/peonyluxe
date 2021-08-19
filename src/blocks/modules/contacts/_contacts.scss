@@ -1,7 +1,6 @@
 .contacts {
   &-banner {
     padding-bottom: 43.5%;
-
     @include media-breakpoint-down(sm) {
       padding-bottom: 0;
       height: 291px;

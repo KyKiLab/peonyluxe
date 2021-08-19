@@ -1,5 +1,4 @@
 .home-banner {
-
   &__item {
     position: relative;
     background-size: cover;
@@ -13,7 +12,6 @@
     @include media-breakpoint-down(lg) {
       padding-top: 15%;
     }
-      
     .btn {
       position: absolute;
       bottom: 10%;
@@ -30,9 +28,9 @@
     transform: translateY(-50%);
     &--prev {
       left: 5%;
-      background-image: url('../img/svg/ic-slider-arrow-prev.svg');
+      background-image: url("../img/svg/ic-slider-arrow-prev.svg");
       @include media-breakpoint-down(lg) {
-        background-image: url('../img/svg/ic-arrow-right.svg');
+        background-image: url("../img/svg/ic-arrow-right.svg");
         background-repeat: no-repeat;
         background-size: contain;
         width: 13px;
@@ -42,9 +40,9 @@
     }
     &--next {
       right: 5%;
-      background-image: url('../img/svg/ic-slider-arrow-next.svg');
+      background-image: url("../img/svg/ic-slider-arrow-next.svg");
       @include media-breakpoint-down(lg) {
-        background-image: url('../img/svg/ic-arrow-right.svg');
+        background-image: url("../img/svg/ic-arrow-right.svg");
         background-repeat: no-repeat;
         background-size: contain;
         width: 13px;

@@ -1,152 +1,139 @@
 .kindwords-hero {
-
-    background: #FEF6F4;
-    padding: 60px 90px 60px 60px;
-    display: flex;
-    justify-content: space-between;
-    @include media-breakpoint-down(xl) {
-        padding: 30px 0px;
-
-    }
+  background: #fef6f4;
+  padding: 60px 90px 60px 60px;
+  display: flex;
+  justify-content: space-between;
+  @include media-breakpoint-down(xl) {
+    padding: 30px 0px;
+  }
+  @include media-breakpoint-down(lg) {
+    background: none;
+    flex-direction: column-reverse;
+  }
+  &__wrap {
+    width: 530px;
+    position: relative;
     @include media-breakpoint-down(lg) {
-        background: none;
-        flex-direction: column-reverse;
-
+      margin: 0 auto;
     }
-    &__wrap {
-        width: 530px;
-        position: relative;
-        @include media-breakpoint-down(lg) {
-            margin: 0 auto;
-        }
-        @include media-breakpoint-down(md) {
-            width: 430px;
-        }
-        @include media-breakpoint-down(sm) {
-            width: 320px;
-            margin-top: 10px;
-        }
+    @include media-breakpoint-down(md) {
+      width: 430px;
     }
-    &__images {
-        position: relative;
-        padding-bottom: 80px;
-        flex-basis: 46%;
-        @include media-breakpoint-down(xl) {
-            flex-basis: 50%;
-        }
+    @include media-breakpoint-down(sm) {
+      width: 320px;
+      margin-top: 10px;
     }
-    &__image--1 {
-        width: 384px;
-        height: 384px;
-        box-sizing: border-box;
-        @include media-breakpoint-down(lg) {
-
-        }
-        @include media-breakpoint-down(md) {
-            width: 334px;
-            height: 334px;
-        }
-        @include media-breakpoint-down(sm) {
-            width: 254px;
-            height: 254px;
-        }
-
+  }
+  &__images {
+    position: relative;
+    padding-bottom: 80px;
+    flex-basis: 46%;
+    @include media-breakpoint-down(xl) {
+      flex-basis: 50%;
     }
-
-    &__image--2 {
-        position: absolute;
-        bottom: -18%;
-        right: 0%;
-
-        @include media-breakpoint-down(md) {
-            width: 200px;
-            height: 200px;
-        }
-        @include media-breakpoint-down(sm) {
-            width: 180px;
-            height: 180px;
-            bottom: -33%;
-        }
+  }
+  &__image--1 {
+    width: 384px;
+    height: 384px;
+    box-sizing: border-box;
+    @include media-breakpoint-down(lg) {
     }
-
-    &__content {
-        flex-basis: 45%;
+    @include media-breakpoint-down(md) {
+      width: 334px;
+      height: 334px;
     }
+    @include media-breakpoint-down(sm) {
+      width: 254px;
+      height: 254px;
+    }
+  }
 
-    &__text {}
+  &__image--2 {
+    position: absolute;
+    bottom: -18%;
+    right: 0%;
+
+    @include media-breakpoint-down(md) {
+      width: 200px;
+      height: 200px;
+    }
+    @include media-breakpoint-down(sm) {
+      width: 180px;
+      height: 180px;
+      bottom: -33%;
+    }
+  }
+
+  &__content {
+    flex-basis: 45%;
+  }
+
+  &__text {
+  }
 }
-
 
 .kindwords-slider {
+  position: relative;
 
-    position: relative;
-
-    &__image {
-        margin: 0 auto;
-        @include media-breakpoint-down(sm) {
-            width: 170px;
-            height: 170px;
-            padding: 0;
-        }
+  &__image {
+    margin: 0 auto;
+    @include media-breakpoint-down(sm) {
+      width: 170px;
+      height: 170px;
+      padding: 0;
     }
+  }
 
-    &__content {
-        text-align: center;
+  &__content {
+    text-align: center;
+  }
+
+  &__text {
+    padding-top: 35px;
+    @include media-breakpoint-down(sm) {
+      padding-top: 25px;
     }
+  }
 
-    &__text {
-        padding-top: 35px;
-        @include media-breakpoint-down(sm) {
-            padding-top: 25px;
-        }
-
-    }
-
-    &__title {
-        @extend .section-title;
-        color: rgba($color: #646e73, $alpha: 0.7);
-    }
-
-    &__btn {}
+  &__title {
+    @extend .section-title;
+    text-align: center;
+    color: rgba($color: #646e73, $alpha: 0.7);
+  }
 }
 
-
-
-
-
 .kindwords {
-    .carousel {
-        position: relative;
-        width: 54%;
-        margin: 0 auto;
-        @include media-breakpoint-down(xl) {
-            width: 60%;
-        }
-        @include media-breakpoint-down(lg) {
-            width: 80%;
-        }
-        @include media-breakpoint-down(md) {
-            width: 90%;
-        }
-        @include media-breakpoint-down(sm) {
-            width: 100%;
-        }
-        &-slider {
-            margin-bottom: 0px;
-        }
+  .carousel {
+    position: relative;
+    width: 54%;
+    margin: 0 auto;
+    @include media-breakpoint-down(xl) {
+      width: 60%;
     }
-    .carousel-controls-btn {
-        position: absolute;
-        top: 110px;
-        @include media-breakpoint-down(sm) {
-            top: 60px;
-        }
-        &--next {
-            right: 0;
-        }
-        &--prev {
-            left: 0;
-        }
-    
+    @include media-breakpoint-down(lg) {
+      width: 80%;
     }
+    @include media-breakpoint-down(md) {
+      width: 90%;
+    }
+    @include media-breakpoint-down(sm) {
+      width: 100%;
+    }
+    &-slider {
+      margin-bottom: 0px;
+    }
+  }
+  .carousel-controls-btn {
+    position: absolute;
+    top: 110px;
+    @include media-breakpoint-down(sm) {
+      top: 60px;
+    }
+    &--next {
+      right: 0;
+    }
+    &--prev {
+      left: 0;
+    }
+  }
 }

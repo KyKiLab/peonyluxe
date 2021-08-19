@@ -3671,7 +3671,7 @@ textarea {
 }
 
 .kindwords-hero {
-  background: #FEF6F4;
+  background: #fef6f4;
   padding: 60px 90px 60px 60px;
   display: flex;
   justify-content: space-between;
@@ -3721,6 +3721,7 @@ textarea {
 }
 
 .kindwords-slider__title {
+  text-align: center;
   color: rgba(100, 110, 115, 0.7);
 }
 
@@ -6355,6 +6356,11 @@ textarea {
   .carousel-controls-dots .slick-dots li button {
     width: 33px;
     flex-shrink: 0;
+  }
+
+  .two-col-text {
+    column-count: 2;
+    column-gap: 30px;
   }
 
   .decor-slogan-mob-show .decor-slogan {
@@ -9341,7 +9347,7 @@ textarea {
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1440.99px) {
   .container,
   .container-sm,
   .container-md,
@@ -10346,22 +10352,22 @@ textarea {
   }
 }
 
-@media (max-width: 1439.98px) {
+@media (max-width: 1440.97px) {
   .home-banner__item {
     height: 100vh;
     padding-top: 12%;
   }
 }
 
-@media (max-width: 1350px) {
-  .meetus-features {
-    grid-template-columns: calc(60% - 20px) calc(40% - 20px);
-  }
-}
-
 @media screen and (max-width: 1350px) {
   .decor-slogan-right-bottom-corner .decor-slogan {
     transform: translate(20%, 50%);
+  }
+}
+
+@media (max-width: 1350px) {
+  .meetus-features {
+    grid-template-columns: calc(60% - 20px) calc(40% - 20px);
   }
 }
 
@@ -10465,21 +10471,31 @@ textarea {
   }
 }
 
-@media (max-width: 1200px) {
-  legend {
-    font-size: 1.5rem;
-  }
-}
-
 @media screen and (max-width: 1200px) {
   .contact-form__action {
     width: calc(25% - 1.875rem);
   }
 }
 
+@media (max-width: 1200px) {
+  legend {
+    font-size: 1.5rem;
+  }
+}
+
 @media (max-width: 1100px) {
   .meetus-about__btn {
     margin-top: -22%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .contact-form__input-group {
+    width: calc(25% - 1.875rem);
+  }
+
+  .contact-form__textarea {
+    width: calc(50% - 1.875rem);
   }
 }
 
@@ -10952,16 +10968,6 @@ textarea {
   #read_more:focus-within {
     border: none;
     outline: none;
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  .contact-form__input-group {
-    width: calc(25% - 1.875rem);
-  }
-
-  .contact-form__textarea {
-    width: calc(50% - 1.875rem);
   }
 }
 

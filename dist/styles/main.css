@@ -4684,14 +4684,6 @@ textarea {
   position: relative;
 }
 
-.read_more-about {
-  display: none;
-}
-
-.show-about {
-  display: inline !important;
-}
-
 .banner {
   padding: 86px 0;
 }
@@ -4709,14 +4701,6 @@ textarea {
 
 .info-step-item-left {
   justify-content: space-between;
-}
-
-.info-step-item .read_more-step {
-  display: none;
-}
-
-.info-step-item .show-step {
-  display: block !important;
 }
 
 .info-step-item p:last-child {
@@ -4745,14 +4729,6 @@ textarea {
 
 .info-block__text p {
   flex-basis: calc(50% - 40px);
-}
-
-.read_more-info {
-  display: none;
-}
-
-.show-info {
-  display: block !important;
 }
 
 .info-block-happy {
@@ -10384,6 +10360,13 @@ textarea {
   }
 }
 
+@media (max-width: 1440.97px) {
+  .home-banner__item {
+    height: 100vh;
+    padding-top: 12%;
+  }
+}
+
 @media screen and (max-width: 1440px) {
   .cf-checkbox__label {
     margin: 0 2.5rem 0 0;
@@ -10394,22 +10377,15 @@ textarea {
   }
 }
 
-@media (max-width: 1440.97px) {
-  .home-banner__item {
-    height: 100vh;
-    padding-top: 12%;
+@media (max-width: 1350px) {
+  .meetus-features {
+    grid-template-columns: calc(60% - 20px) calc(40% - 20px);
   }
 }
 
 @media screen and (max-width: 1350px) {
   .decor-slogan-right-bottom-corner .decor-slogan {
     transform: translate(20%, 50%);
-  }
-}
-
-@media (max-width: 1350px) {
-  .meetus-features {
-    grid-template-columns: calc(60% - 20px) calc(40% - 20px);
   }
 }
 
@@ -10513,31 +10489,21 @@ textarea {
   }
 }
 
-@media screen and (max-width: 1200px) {
-  .contact-form__action {
-    width: calc(25% - 1.875rem);
-  }
-}
-
 @media (max-width: 1200px) {
   legend {
     font-size: 1.5rem;
   }
 }
 
-@media (max-width: 1100px) {
-  .meetus-about__btn {
-    margin-top: -22%;
+@media screen and (max-width: 1200px) {
+  .contact-form__action {
+    width: calc(25% - 1.875rem);
   }
 }
 
-@media screen and (max-width: 1024px) {
-  .contact-form__input-group {
-    width: calc(25% - 1.875rem);
-  }
-
-  .contact-form__textarea {
-    width: calc(50% - 1.875rem);
+@media (max-width: 1100px) {
+  .meetus-about__btn {
+    margin-top: -22%;
   }
 }
 
@@ -10886,25 +10852,6 @@ textarea {
     width: 100%;
   }
 
-  .extra_content-video {
-    display: none !important;
-  }
-
-  .read_more-video {
-    display: block;
-    border: none;
-    text-transform: lowercase;
-    margin-left: auto;
-    color: #646e73;
-  }
-
-  .read_more-video:hover,
-  .read_more-video:focus,
-  .read_more-video:focus-within {
-    border: none;
-    outline: none;
-  }
-
   .about {
     flex-direction: column-reverse;
     padding-top: 0px;
@@ -10927,66 +10874,9 @@ textarea {
     right: -20%;
   }
 
-  .extra_content-about {
-    display: none;
-  }
-
-  #read_more-about {
-    display: block;
-    border: none;
-    text-transform: lowercase;
-    margin-left: auto;
-    color: #646e73;
-  }
-
-  #read_more-about:hover,
-  #read_more-about:focus,
-  #read_more-about:focus-within {
-    border: none;
-    outline: none;
-  }
-
-  .info-step-item .extra_content-step {
-    display: none;
-  }
-
-  .info-step-item #read_more-step {
-    display: block;
-    border: none;
-    text-transform: lowercase;
-    margin-left: auto;
-    color: #646e73;
-  }
-
-  .info-step-item #read_more-step:hover,
-  .info-step-item #read_more-step:focus,
-  .info-step-item #read_more-step:focus-within {
-    border: none;
-    outline: none;
-  }
-
   .info-block__text {
     margin: 0;
     flex-direction: column;
-  }
-
-  .extra_content-info {
-    display: none;
-  }
-
-  #read_more-info {
-    display: block;
-    border: none;
-    text-transform: lowercase;
-    margin-left: auto;
-    color: #646e73;
-  }
-
-  #read_more-info:hover,
-  #read_more-info:focus,
-  #read_more-info:focus-within {
-    border: none;
-    outline: none;
   }
 
   .popup {
@@ -11015,6 +10905,16 @@ textarea {
   .read_more-btn:focus-within {
     border: none;
     outline: none;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .contact-form__input-group {
+    width: calc(25% - 1.875rem);
+  }
+
+  .contact-form__textarea {
+    width: calc(50% - 1.875rem);
   }
 }
 

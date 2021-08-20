@@ -95,21 +95,4 @@
   }
 }
 
-@include media-breakpoint-down(lg) {
-  .extra_content-video {
-    display: none !important;
-  }
-  .read_more-video {
-    display: block;
-    border: none;
-    text-transform: lowercase;
-    margin-left: auto;
-    color: $grey-text;
-    &:hover,
-    &:focus,
-    &:focus-within {
-      border: none;
-      outline: none;
-    }
-  }
-}
+

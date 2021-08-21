@@ -10350,6 +10350,13 @@ textarea {
   }
 }
 
+@media (max-width: 1440.97px) {
+  .home-banner__item {
+    height: 100vh;
+    padding-top: 12%;
+  }
+}
+
 @media screen and (max-width: 1440px) {
   .cf-checkbox__label {
     margin: 0 2.5rem 0 0;
@@ -10360,22 +10367,15 @@ textarea {
   }
 }
 
-@media (max-width: 1440.97px) {
-  .home-banner__item {
-    height: 100vh;
-    padding-top: 12%;
+@media (max-width: 1350px) {
+  .meetus-features {
+    grid-template-columns: calc(60% - 20px) calc(40% - 20px);
   }
 }
 
 @media screen and (max-width: 1350px) {
   .decor-slogan-right-bottom-corner .decor-slogan {
     transform: translate(20%, 50%);
-  }
-}
-
-@media (max-width: 1350px) {
-  .meetus-features {
-    grid-template-columns: calc(60% - 20px) calc(40% - 20px);
   }
 }
 
@@ -10479,31 +10479,21 @@ textarea {
   }
 }
 
-@media screen and (max-width: 1200px) {
-  .contact-form__action {
-    width: calc(25% - 1.875rem);
-  }
-}
-
 @media (max-width: 1200px) {
   legend {
     font-size: 1.5rem;
   }
 }
 
-@media (max-width: 1100px) {
-  .meetus-about__btn {
-    margin-top: -22%;
+@media screen and (max-width: 1200px) {
+  .contact-form__action {
+    width: calc(25% - 1.875rem);
   }
 }
 
-@media screen and (max-width: 1024px) {
-  .contact-form__input-group {
-    width: calc(25% - 1.875rem);
-  }
-
-  .contact-form__textarea {
-    width: calc(50% - 1.875rem);
+@media (max-width: 1100px) {
+  .meetus-about__btn {
+    margin-top: -22%;
   }
 }
 
@@ -10976,6 +10966,16 @@ textarea {
   #read_more:focus-within {
     border: none;
     outline: none;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .contact-form__input-group {
+    width: calc(25% - 1.875rem);
+  }
+
+  .contact-form__textarea {
+    width: calc(50% - 1.875rem);
   }
 }
 

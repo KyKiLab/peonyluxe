@@ -286,20 +286,20 @@ __webpack_require__.r(__webpack_exports__);
 
 jQuery(function ($) {
   $(function () {
-    var $slider = $("#wis-slides"); // const $sliderControlsDots = $sliderContainer.find(".carousel-controls-dots");
-    // const $sliderCounterCurrent = $sliderContainer.find(".js-counter-current");
-    // const $sliderCounterTotal = $sliderContainer.find(".js-counter-total");
-
+    var $slider = $("#wis-slides");
+    var $sliderControlsDots = $sliderContainer.find(".carousel-controls-dots");
+    var $sliderCounterCurrent = $sliderContainer.find(".js-counter-current");
+    var $sliderCounterTotal = $sliderContainer.find(".js-counter-total");
     $slider.slick({
       slidesToShow: 4,
       slidesToScroll: 1,
-      // dots: true,
+      dots: true,
       fade: false,
-      infinite: true // arrows: true,
-      // appendDots: $sliderControlsDots,
-      // prevArrow: $sliderContainer.find(".carousel-controls-btn--prev"),
-      // nextArrow: $sliderContainer.find(".carousel-controls-btn--next"),
-
+      infinite: true,
+      arrows: true,
+      appendDots: $sliderControlsDots,
+      prevArrow: $sliderContainer.find(".carousel-controls-btn--prev"),
+      nextArrow: $sliderContainer.find(".carousel-controls-btn--next")
     });
   });
 });

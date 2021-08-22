@@ -4,3 +4,4 @@ import "%modules%/blog/slider";
 import "%modules%/kindwords/slider";
 import "%modules%/home/home-banner";
 import "%modules%/meet-us/meet-us";
+import "%modules%/popup/popup";

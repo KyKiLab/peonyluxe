@@ -83,29 +83,3 @@
 }
 
 
-@include media-breakpoint-down(lg) {
-  .extra_content-about {
-    display: none;
-  }
-  #read_more-about {
-    display: block;
-    border: none;
-    text-transform: lowercase;
-    margin-left: auto;
-    color: $grey-text;
-    &:hover, 
-    &:focus,
-    &:focus-within {
-      border: none;
-      outline: none;
-    }
-  }
-}
-
-.read_more-about  {
-  display: none;
-}
-
-.show-about {
-   display: inline !important;
-}

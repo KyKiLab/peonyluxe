@@ -10918,6 +10918,16 @@ textarea {
   }
 }
 
+@media screen and (max-width: 1024px) {
+  .contact-form__input-group {
+    width: calc(25% - 1.875rem);
+  }
+
+  .contact-form__textarea {
+    width: calc(50% - 1.875rem);
+  }
+}
+
 @media screen and (max-width: 950px) {
   body {
     padding-bottom: 6.25rem;

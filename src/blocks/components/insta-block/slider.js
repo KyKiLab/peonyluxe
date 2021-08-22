@@ -2,8 +2,11 @@ import $ from "jquery";
 
 jQuery(function ($) {
   $(function () {
+    const $sliderContainer = $(".insta-block-slider");
     const $slider = $("#wis-slides");
-    const $sliderControlsDots = $sliderContainer.find(".carousel-controls-dots");
+    const $sliderControlsDots = $sliderContainer.find(
+      ".carousel-controls-dots"
+    );
     const $sliderCounterCurrent = $sliderContainer.find(".js-counter-current");
     const $sliderCounterTotal = $sliderContainer.find(".js-counter-total");
 

@@ -77,9 +77,12 @@
 
   &__image {
     margin: 0 auto;
+    width: 310px !important;
+    height: 278px !important;
+    object-fit: cover;
     @include media-breakpoint-down(sm) {
-      width: 170px;
-      height: 170px;
+      width: 170px !important;
+      height: 170px !important;
       padding: 0;
     }
   }

@@ -1,13 +1,21 @@
-document.getElementById("read_more").addEventListener( 'click' , changeClass);
+const readMoreBtns = document.querySelectorAll(".js-read_more-btn");
 
-function changeClass() {
-    var content = document.getElementById("extra_content");
-    var btn = document.getElementById("read_more");
-    content.classList.toggle('show');
-    
-    if (content.classList.contains("show")) {
-            btn.innerHTML = "Read Less";
-        } else {
-            btn.innerHTML = "Read More";
-        }
+readMoreBtns.length
+  ? readMoreBtns.forEach((readMoreBtn) => {
+      readMoreBtn.addEventListener("click", changeClass);
+    })
+  : null;
+
+function changeClass(e) {
+  const content = e.target
+    .closest(".js-read_more-block")
+    .querySelector(".js-read_more-content");
+
+  content.classList.toggle("show");
+
+  if (content.classList.contains("show")) {
+    e.target.innerHTML = "Read Less";
+  } else {
+    e.target.innerHTML = "Read More";
+  }
 }

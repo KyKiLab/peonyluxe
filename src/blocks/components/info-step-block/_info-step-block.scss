@@ -10,6 +10,9 @@
     }
 
     &-right {
+      @include media-breakpoint-up(xxl) {
+        background: url("../img/bg-subtract-right.svg") no-repeat 105%/54%;
+      }
       @include media-breakpoint-up(xl) {
         background: url("../img/bg-subtract-right.svg") no-repeat 105%/56%;
       }
@@ -39,6 +42,9 @@
         width: 440px;
         height: 550px;
         object-fit: cover;
+        @include media-breakpoint-up(xxl) {
+          height: 500px;
+        }
 
         @include media-breakpoint-down(md) {
           width: 100%;

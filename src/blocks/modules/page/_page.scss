@@ -23,14 +23,12 @@
     }
   }
   &-main {
-    padding-top: 0 ;
+    padding-top: 0;
     @media screen and (max-width: 950.99px) {
       padding-top: rem(100);
-
     }
     @include media-breakpoint-down(sm) {
       padding-top: rem(90);
-
     }
   }
   &-blog {
@@ -49,6 +47,10 @@
     }
     @include media-breakpoint-down(md) {
       padding-top: rem(130);
+    }
+
+    &__banner {
+      margin-bottom: 80px;
     }
   }
   &-slider {

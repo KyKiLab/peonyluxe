@@ -26,32 +26,7 @@
     flex-basis: calc(50% - 40px);
   }
 }
-@include media-breakpoint-down(lg) {
-  .extra_content-info {
-    display: none;
-  }
-  #read_more-info {
-    display: block;
-    border: none;
-    text-transform: lowercase;
-    margin-left: auto;
-    color: $grey-text;
-    &:hover, 
-    &:focus,
-    &:focus-within {
-      border: none;
-      outline: none;
-    }
-  }
-}
 
-.read_more-info  {
-  display: none;
-}
-
-.show-info {
-   display: block !important;
-}
 
 .info-block {
   &-happy {

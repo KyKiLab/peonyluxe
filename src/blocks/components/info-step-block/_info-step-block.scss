@@ -11,12 +11,10 @@
 
     &-right {
       @include media-breakpoint-up(xl) {
-        background: url("../img/bg-subtract-right.svg") no-repeat right /
-        53%;
+        background: url("../img/bg-subtract-right.svg") no-repeat 105%/56%;
       }
       @include media-breakpoint-up(lg) {
-        background: url("../img/bg-subtract-right.svg") no-repeat right /
-        61%;
+        background: url("../img/bg-subtract-right.svg") no-repeat 102%/60%;
       }
       @include media-breakpoint-down(md) {
         margin-bottom: 60px;
@@ -26,13 +24,9 @@
       justify-content: space-between;
 
       @include media-breakpoint-up(lg) {
-        background: url("../img/bg-subtract-left.svg") no-repeat left /
-        48%;
+        background: url("../img/bg-subtract-left.svg") no-repeat left / 48%;
       }
-
     }
-
-
 
     p {
       &:last-child {
@@ -42,7 +36,7 @@
 
     &__picture {
       img {
-        width: 400px;
+        width: 440px;
         height: 550px;
         object-fit: cover;
 
@@ -53,7 +47,5 @@
         }
       }
     }
-
-
   }
 }

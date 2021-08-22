@@ -4968,10 +4968,6 @@ textarea {
   transform: translate(20%, 0%);
 }
 
-.read_more-video {
-  display: none;
-}
-
 .decor-slogan circle {
   opacity: 0.4;
 }
@@ -5040,14 +5036,6 @@ textarea {
   position: relative;
 }
 
-.read_more-about {
-  display: none;
-}
-
-.show-about {
-  display: inline !important;
-}
-
 .banner {
   padding: 86px 0;
 }
@@ -5065,14 +5053,6 @@ textarea {
 
 .info-step-item-left {
   justify-content: space-between;
-}
-
-.info-step-item .read_more-step {
-  display: none;
-}
-
-.info-step-item .show-step {
-  display: block !important;
 }
 
 .info-step-item p:last-child {
@@ -5101,14 +5081,6 @@ textarea {
 
 .info-block__text p {
   flex-basis: calc(50% - 40px);
-}
-
-.read_more-info {
-  display: none;
-}
-
-.show-info {
-  display: block !important;
 }
 
 .info-block-happy {
@@ -5735,12 +5707,50 @@ textarea {
   right: -90px;
 }
 
-.read_more {
+.overlay {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.5);
   display: none;
+  z-index: 4;
 }
 
-.show {
-  display: inline !important;
+.popup {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 844px;
+  height: 631px;
+  background: linear-gradient(131.43deg, #fdfbfa 10.48%, #fff7f5 85.26%);
+  box-shadow: 4px 4px 40px rgba(124, 90, 54, 0.25);
+}
+
+.popup img {
+  margin-bottom: 40px;
+}
+
+.popup p {
+  width: 65%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.popup .section-title,
+.popup .kindwords-slider__title {
+  text-transform: uppercase !important;
+}
+
+.read_more-btn {
+  display: none;
 }
 
 @media (min-width: 600px) {
@@ -11310,29 +11320,6 @@ textarea {
     width: 100%;
   }
 
-  .extra_content-video {
-    display: none !important;
-  }
-
-  #read_more-video {
-    display: block;
-    border: none;
-    text-transform: lowercase;
-    margin-left: auto;
-    color: #646e73;
-  }
-
-  #read_more-video:hover,
-  #read_more-video:focus,
-  #read_more-video:focus-within {
-    border: none;
-    outline: none;
-  }
-
-  .show-video {
-    display: inline !important;
-  }
-
   .about {
     flex-direction: column-reverse;
     padding-top: 0px;
@@ -11355,54 +11342,25 @@ textarea {
     right: -20%;
   }
 
-  .extra_content-about {
-    display: none;
-  }
-
-  #read_more-about {
-    display: block;
-    border: none;
-    text-transform: lowercase;
-    margin-left: auto;
-    color: #646e73;
-  }
-
-  #read_more-about:hover,
-  #read_more-about:focus,
-  #read_more-about:focus-within {
-    border: none;
-    outline: none;
-  }
-
-  .info-step-item .extra_content-step {
-    display: none;
-  }
-
-  .info-step-item #read_more-step {
-    display: block;
-    border: none;
-    text-transform: lowercase;
-    margin-left: auto;
-    color: #646e73;
-  }
-
-  .info-step-item #read_more-step:hover,
-  .info-step-item #read_more-step:focus,
-  .info-step-item #read_more-step:focus-within {
-    border: none;
-    outline: none;
-  }
-
   .info-block__text {
     margin: 0;
     flex-direction: column;
   }
 
-  .extra_content-info {
-    display: none;
+  .popup {
+    width: 550px;
+    height: 500px;
   }
 
-  #read_more-info {
+  .read_more-content {
+    display: none !important;
+  }
+
+  .read_more-content.show {
+    display: inline !important;
+  }
+
+  .read_more-btn {
     display: block;
     border: none;
     text-transform: lowercase;
@@ -11410,28 +11368,9 @@ textarea {
     color: #646e73;
   }
 
-  #read_more-info:hover,
-  #read_more-info:focus,
-  #read_more-info:focus-within {
-    border: none;
-    outline: none;
-  }
-
-  .extra_content {
-    display: none;
-  }
-
-  #read_more {
-    display: block;
-    border: none;
-    text-transform: lowercase;
-    margin-left: auto;
-    color: #646e73;
-  }
-
-  #read_more:hover,
-  #read_more:focus,
-  #read_more:focus-within {
+  .read_more-btn:hover,
+  .read_more-btn:focus,
+  .read_more-btn:focus-within {
     border: none;
     outline: none;
   }
@@ -12003,6 +11942,26 @@ textarea {
 
   .destinations .slick-slide {
     width: 280px;
+  }
+
+  .popup {
+    width: calc(100vw - 40px);
+    height: calc(100vh - 40px);
+    padding: 0 30px;
+  }
+
+  .popup img {
+    display: none;
+  }
+
+  .popup p {
+    width: 100%;
+  }
+
+  .popup .section-title,
+  .popup .kindwords-slider__title {
+    font-size: 24px;
+    line-height: 30px;
   }
 }
 

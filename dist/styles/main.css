@@ -4551,6 +4551,10 @@ textarea {
 }
 
 .article-quote__text {
+  width: 45%;
+}
+
+.article-quote__text blockquote {
   position: relative;
   font-weight: 700;
   font-size: 36px;
@@ -4559,15 +4563,14 @@ textarea {
   text-transform: uppercase;
   font-family: "Nanum", serif;
   color: #646e73;
-  width: 46%;
   margin-top: 110px;
 }
 
-.article-quote__text::before {
+.article-quote__text blockquote::before {
   content: "";
   position: absolute;
   transform: rotate(180deg);
-  top: -11%;
+  top: -16%;
   left: -10%;
   z-index: -1;
   background-image: url("../../../img/meet-us/quotes.svg");
@@ -4575,10 +4578,10 @@ textarea {
   height: 86px;
 }
 
-.article-quote__text::after {
+.article-quote__text blockquote::after {
   content: "";
   position: absolute;
-  bottom: 13%;
+  bottom: -12%;
   right: 10%;
   z-index: -1;
   width: 96px;
@@ -10717,6 +10720,10 @@ textarea {
     height: 100vh;
     padding-top: 12%;
   }
+
+  .article-quote__text {
+    width: 46%;
+  }
 }
 
 @media screen and (max-width: 1440px) {
@@ -10864,8 +10871,9 @@ textarea {
     height: 386px;
   }
 
-  .article-quote__text {
+  .article-quote__text blockquote {
     font-size: 30px;
+    margin-top: 50px;
   }
 
   .decor-slogan-xl-hide .decor-slogan {
@@ -11271,17 +11279,16 @@ textarea {
     right: -123px;
   }
 
-  .article-quote__text {
+  .article-quote__text blockquote {
     font-size: 20px;
-    margin-top: 50px;
   }
 
-  .article-quote__text::before {
-    top: -16%;
+  .article-quote__text blockquote::before {
+    top: -44%;
   }
 
-  .article-quote__text::after {
-    bottom: 45%;
+  .article-quote__text blockquote::after {
+    bottom: -39%;
   }
 
   .article-place {
@@ -11778,14 +11785,17 @@ textarea {
   }
 
   .article-quote__text {
+    width: 90%;
+  }
+
+  .article-quote__text blockquote {
     font-size: 18px;
     margin: 30px auto 0;
     width: auto;
     text-align: center;
-    width: 90%;
   }
 
-  .article-quote__text::before {
+  .article-quote__text blockquote::before {
     width: 62px;
     height: 56px;
     top: -52%;
@@ -11793,7 +11803,7 @@ textarea {
     background-size: contain;
   }
 
-  .article-quote__text::after {
+  .article-quote__text blockquote::after {
     width: 62px;
     height: 56px;
     bottom: -58%;
@@ -12336,12 +12346,12 @@ textarea {
     height: 236px;
   }
 
-  .article-quote__text::before {
+  .article-quote__text blockquote::before {
     left: 0%;
     top: -24%;
   }
 
-  .article-quote__text::after {
+  .article-quote__text blockquote::after {
     bottom: -21%;
   }
 

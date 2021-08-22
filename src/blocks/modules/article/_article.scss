@@ -370,83 +370,93 @@
         }
 
         &__text {
-            position: relative;
-            font-weight: 700;
-            font-size: 36px;
-            line-height: 160%;
-            letter-spacing: 0.04em;
-            text-transform: uppercase;
-            font-family: "Nanum", serif;
-            color: $grey-text;
-            width: 46%;
-            margin-top: 110px;
-
-            @include media-breakpoint-down(xl) {
-                font-size: 30px;
-            }
-            @include media-breakpoint-down(lg) {
-                font-size: 20px;
-                margin-top: 50px;
+            width: 45%;
+            @include media-breakpoint-down(xxl) {
+                width: 46%;
             }
             @include media-breakpoint-down(md) {
-                font-size: 18px;
-                margin: 30px auto 0;
-                width: auto;
-                text-align: center;
                 width: 90%;
+
             }
-            &::before {
-                content: "";
-                position: absolute;
-                transform: rotate(180deg);
-                top: -11%;
-                left: -10%;
-                z-index: -1;
-                background-image: url('../../../img/meet-us/quotes.svg');
-                width: 96px;
-                height: 86px;
+            blockquote {
+                position: relative;
+                font-weight: 700;
+                font-size: 36px;
+                line-height: 160%;
+                letter-spacing: 0.04em;
+                text-transform: uppercase;
+                font-family: "Nanum", serif;
+                color: $grey-text;
+                margin-top: 110px;
+
+                @include media-breakpoint-down(xl) {
+                    font-size: 30px;
+                    margin-top: 50px;
+
+                }
                 @include media-breakpoint-down(lg) {
-                        top: -16%;
+                    font-size: 20px;
                 }
                 @include media-breakpoint-down(md) {
-                    width: 62px;
-                    height: 56px;
-                    top: -52%;
-                    left: 2%;
-                    background-size: contain;
-    
+                    font-size: 18px;
+                    margin: 30px auto 0;
+                    width: auto;
+                    text-align: center;
                 }
-                @include media-breakpoint-down(sm) {
-                    left: 0%;
-                    top: -24%;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    transform: rotate(180deg);
+                    top: -16%;
+                    left: -10%;
+                    z-index: -1;
+                    background-image: url('../../../img/meet-us/quotes.svg');
+                    width: 96px;
+                    height: 86px;
+                    @include media-breakpoint-down(lg) {
+                            top: -44%;
+                    }
+                    @include media-breakpoint-down(md) {
+                        width: 62px;
+                        height: 56px;
+                        top: -52%;
+                        left: 2%;
+                        background-size: contain;
+        
+                    }
+                    @include media-breakpoint-down(sm) {
+                        left: 0%;
+                        top: -24%;
+                    }
+                }
+                &::after {
+                    content:"" ;
+                    position: absolute;
+                    bottom: -12%;
+                    right: 10%;
+                    z-index: -1;            
+                    width: 96px;
+                    height: 86px;
+                    background-image: url('../../../img/meet-us/quotes.svg');
+                    @include media-breakpoint-down(lg) {
+                        bottom: -39%;
+        
+                }
+        
+                    @include media-breakpoint-down(md) {
+                        width: 62px;
+                        height: 56px;
+                        bottom: -58%;
+                        right: 3%;
+                        background-size: contain;
+                    }
+                    @include media-breakpoint-down(sm) {
+                        bottom: -21%;
+                    }
+                            
                 }
             }
-            &::after {
-                content:"" ;
-                position: absolute;
-                bottom: 13%;
-                right: 10%;
-                z-index: -1;            
-                width: 96px;
-                height: 86px;
-                background-image: url('../../../img/meet-us/quotes.svg');
-                @include media-breakpoint-down(lg) {
-                    bottom: 45%;
-    
-            }
-    
-                @include media-breakpoint-down(md) {
-                    width: 62px;
-                    height: 56px;
-                    bottom: -58%;
-                    right: 3%;
-                    background-size: contain;
-                }
-                @include media-breakpoint-down(sm) {
-                    bottom: -21%;
-                }
-                        
-            }
+
 
         }
     }

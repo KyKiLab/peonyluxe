@@ -4426,6 +4426,16 @@ textarea {
   column-gap: 70px;
 }
 
+.article-about__text a {
+  font-size: inherit;
+  color: #dda288;
+  text-decoration: underline;
+}
+
+.article-about__text a:hover {
+  color: #dda288;
+}
+
 .article-about__img {
   width: 421px;
   height: 456px;
@@ -4540,21 +4550,6 @@ textarea {
   right: -86px;
 }
 
-.article-quote__left {
-  position: absolute;
-  transform: rotate(180deg);
-  top: 14%;
-  left: -10%;
-  z-index: -1;
-}
-
-.article-quote__right {
-  position: absolute;
-  bottom: 11%;
-  right: 10%;
-  z-index: -1;
-}
-
 .article-quote__text {
   position: relative;
   font-weight: 700;
@@ -4564,23 +4559,31 @@ textarea {
   text-transform: uppercase;
   font-family: "Nanum", serif;
   color: #646e73;
-  width: 610px;
-}
-
-.article-quote__text .first {
+  width: 46%;
   margin-top: 110px;
 }
 
-.article-quote__text .second {
-  margin-left: 83px;
+.article-quote__text::before {
+  content: "";
+  position: absolute;
+  transform: rotate(180deg);
+  top: -11%;
+  left: -10%;
+  z-index: -1;
+  background-image: url("../../../img/meet-us/quotes.svg");
+  width: 96px;
+  height: 86px;
 }
 
-.article-quote__text .fourth {
-  margin-left: 53px;
-}
-
-.article-quote__text .fifth {
-  margin-left: 124px;
+.article-quote__text::after {
+  content: "";
+  position: absolute;
+  bottom: 13%;
+  right: 10%;
+  z-index: -1;
+  width: 96px;
+  height: 86px;
+  background-image: url("../../../img/meet-us/quotes.svg");
 }
 
 .article-place {
@@ -10853,7 +10856,6 @@ textarea {
 
   .article-quote__text {
     font-size: 30px;
-    width: 520px;
   }
 
   .decor-slogan-xl-hide .decor-slogan {
@@ -11260,8 +11262,16 @@ textarea {
   }
 
   .article-quote__text {
-    font-size: 23px;
-    width: 450px;
+    font-size: 20px;
+    margin-top: 50px;
+  }
+
+  .article-quote__text::before {
+    top: -16%;
+  }
+
+  .article-quote__text::after {
+    bottom: 45%;
   }
 
   .article-place {
@@ -11511,13 +11521,6 @@ textarea {
   }
 }
 
-@media (max-width: 850px) {
-  .article-quote__text {
-    font-size: 20px;
-    width: 371px;
-  }
-}
-
 @media (max-width: 799.98px) {
   .carousel-controls {
     justify-content: center;
@@ -11760,10 +11763,9 @@ textarea {
   }
 
   .article-main__img img {
-    width: 420px;
-    margin-left: auto;
-    display: block;
-    margin-right: 55px;
+    width: calc(100% - 30px);
+    height: 297px;
+    margin: 0;
   }
 
   .article-about__title {
@@ -11821,9 +11823,14 @@ textarea {
     line-height: 22px;
   }
 
+  .article-quote {
+    flex-direction: column;
+  }
+
   .article-quote__picture {
     width: 287px;
     margin-top: 0;
+    margin-bottom: 134px;
   }
 
   .article-quote__img {
@@ -11831,49 +11838,28 @@ textarea {
     height: 336px;
   }
 
-  .article-quote__left {
-    width: 62px;
-    height: 56px;
-    top: 12%;
-    left: 2%;
-  }
-
-  .article-quote__right {
-    width: 62px;
-    height: 56px;
-    bottom: 30%;
-    right: 3%;
-  }
-
-  .article-quote__right {
-    bottom: -12%;
-  }
-
   .article-quote__text {
     font-size: 18px;
-    width: 300px;
-    margin-left: 10px;
+    margin: 30px auto 0;
+    width: auto;
+    text-align: center;
+    width: 90%;
   }
 
-  .article-quote__text .first {
-    margin-left: 25px;
-    margin-top: 70px;
+  .article-quote__text::before {
+    width: 62px;
+    height: 56px;
+    top: -52%;
+    left: 2%;
+    background-size: contain;
   }
 
-  .article-quote__text .second {
-    margin-left: 25px;
-  }
-
-  .article-quote__text .third {
-    margin-left: 0px;
-  }
-
-  .article-quote__text .fourth {
-    margin-left: 25px;
-  }
-
-  .article-quote__text .fifth {
-    margin-left: 50px;
+  .article-quote__text::after {
+    width: 62px;
+    height: 56px;
+    bottom: -58%;
+    right: 3%;
+    background-size: contain;
   }
 
   .article-place {
@@ -12360,12 +12346,6 @@ textarea {
     flex-basis: auto;
   }
 
-  .article-main__img img {
-    width: calc(100% - 30px);
-    height: 297px;
-    margin: 0;
-  }
-
   .article-main__img .decor-slogan {
     top: -30px;
   }
@@ -12388,13 +12368,8 @@ textarea {
     height: 297px;
   }
 
-  .article-quote {
-    flex-direction: column;
-  }
-
   .article-quote__picture {
     width: 187px;
-    margin-bottom: 134px;
   }
 
   .article-quote__img {
@@ -12402,17 +12377,13 @@ textarea {
     height: 236px;
   }
 
-  .article-quote__left {
+  .article-quote__text::before {
     left: 0%;
+    top: -24%;
   }
 
-  .article-quote__text {
-    margin: 0 auto;
-    width: auto;
-  }
-
-  .article-quote__text .first {
-    margin-top: 50px;
+  .article-quote__text::after {
+    bottom: -21%;
   }
 
   .article-place {

@@ -1,15 +1,22 @@
 .social-list {
-  // .social-list__item
+  
+display: flex;
+@include media-breakpoint-down(lg) {
+  align-items: center;
+  justify-content: center;
 
+
+}
   &__item {
-    display: inline-block;
     width: 36px;
     height: 36px;
     border-radius: 50%;
     border: 1px solid $accent;
     background-position: center;
     background-repeat: no-repeat;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
     &:hover {
       opacity: 0.7;
     }
@@ -21,21 +28,4 @@
 
   // .social-list__item--insta
 
-  &__item--insta {
-    background-image: url("../img/ic-insta.svg");
-    background-size: 17px 17px;
-  }
-
-  // .social-list__item--fb
-
-  &__item--fb {
-    background-image: url("../img/ic-fb.svg");
-    background-size: 9px 17px;
-  }
-  // .social-list__item--tik
-
-  &__item--tik {
-    background-image: url("../img/ic-tik.svg");
-    background-size: 14px 16px;
-  }
 }

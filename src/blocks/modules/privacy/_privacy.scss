@@ -1,0 +1,15 @@
+.privacy {
+    ul {
+        list-style-position: inside;
+        padding-left: 15px;
+    }
+    a {
+        font-size: inherit;
+        color: $accent;
+        text-decoration: underline;
+      
+        &:hover {
+            color: $accent;
+        }
+    }
+}

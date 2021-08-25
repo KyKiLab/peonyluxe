@@ -61,8 +61,7 @@
     }
     &-social {
       display: flex !important;
-      justify-content: space-between;
-      width: 168px;
+      justify-content: center;
       margin: 0 auto;
       &__icon {
         width: 36px;
@@ -72,6 +71,10 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-left: 20px;
+      }
+      &__icon:first-child {
+        margin-left: 0;
       }
     }
   }

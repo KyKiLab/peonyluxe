@@ -14,7 +14,6 @@ var collapseElementList = [].slice.call(document.querySelectorAll(".collapse"));
 collapseElementList.map(function (collapseEl) {
   return new Collapse(collapseEl);
 });
-
 jQuery(function ($) {
   $(function () {
     $("[data-fancybox]").fancybox({

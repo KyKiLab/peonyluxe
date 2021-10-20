@@ -10,7 +10,7 @@
         height: 320px;
       }
     }
-  
+
 }
 
 .info-block__text {
@@ -44,6 +44,7 @@
     img {
       width: 440px;
       height: 425px;
+      object-fit: cover;
       @include media-breakpoint-down(md) {
         width: 250px;
         height: 300px;
@@ -55,15 +56,13 @@
         width: 189.7px;
         height: 243px;
       }
-
-
     }
     .flex-column {
       @include media-breakpoint-down(md) {
         display: block;
         width: auto;
       }
-      
+
     }
     .decor-slogan {
       @include media-breakpoint-down(md) {
@@ -83,7 +82,7 @@
       }
 
     }
-    
+
     .subtitle-decor {
       @include media-breakpoint-down(md) {
         position: absolute;

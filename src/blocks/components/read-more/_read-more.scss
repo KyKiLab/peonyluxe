@@ -1,16 +1,6 @@
-.read_more-content {
-  @include media-breakpoint-down(lg) {
-    display: none !important;
-
-    &.show {
-      display: inline !important;
-    }
-  }
-}
-
-.read_more-btn {
+.read-more-btn {
   display: none;
-  @include media-breakpoint-down(lg) {
+  @include media-breakpoint-down(md) {
     display: block;
     border: none;
     text-transform: lowercase;

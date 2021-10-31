@@ -76,7 +76,6 @@ body {
   }
 }
 
-
 .w-100 {
   width: 100%;
 }
@@ -241,5 +240,14 @@ body {
   @include media-breakpoint-up(sm) {
     column-count: 2;
     column-gap: 30px;
+  }
+}
+
+.page-404 {
+  &--bg {
+    background: url("../img/bg-substract.svg") no-repeat center bottom / contain;
+    @include media-breakpoint-down(md) {
+      background: none;
+    }
   }
 }
